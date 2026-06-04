@@ -1,0 +1,145 @@
+@import url("https://kit-pro.fontawesome.com/releases/v7.2.0/css/pro.min.css");
+
+
+.chrono {
+  background: var(--white);
+  padding: 10px;
+  border: var(--border);
+  box-sizing: border-box;
+  color: var(--textColor);
+  display: flex;
+  position: relative;
+  height: 700px;
+  overflow: auto;
+align-items: flex-start;
+}
+
+.chrono lst {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 25px;
+}
+
+h {
+  display: block;
+  position: relative
+}
+
+h ln {
+  width: 4px;
+  height: 100%;
+  background: var(--textColor);
+  display: block;
+  position: absolute;
+  left: 143px;
+  z-index: 1
+}
+
+.chrono x {
+  display: none;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.chrono x:has(a) {
+  display: flex;
+}
+
+.chrono x l {
+  display: flex;
+  flex-direction: column;
+  line-height: 100%;
+  width: 100px;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.chrono x l labo {
+  font-size: 15px;
+}
+
+.chrono x l labi2 {
+  font-size: 12px;
+  text-align: right
+}
+
+.chrono x m {
+  width: 50px;
+  z-index: 2;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.chrono x m y {
+  height: 20px;
+  width: 20px;
+  background: var(--grad);
+  display: block;
+  border-radius: 100%;
+}
+
+.chrono x r {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  padding: 0 15px 0 0;
+}
+
+.chrono x r labo2 {
+  display: block;
+  font-size: 15px;
+  line-height: 100%;
+}
+
+.chrono x r labo {
+  display: block;
+  font-size: 12px;
+}
+
+.chrono x r c {
+  text-align: justify;
+  line-height: 120%;
+}
+
+.chrono w {
+  display: block;
+  width: 100px;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.chrono labo2 b a {
+  font-weight: 700!important
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: space-evenly;
+margin-top:10px
+}
+.filter-buttons input {display: none;}
+
+.filter-buttons label {
+    flex:1;
+    text-align: center;
+    padding: 5px;
+    color: var(--contrast);
+    cursor: pointer;
+    transition: background-color 0.3s;
+    line-height: 20px;
+    font-family: var(--font2);
+    text-transform: uppercase;
+}
+
+.filter-buttons input:checked+label {
+    background-color: var(--contrast);
+    color: var(--white);
+}
+
+.ffond:has(input[id="croissant"]:checked) + h .chrono lst {flex-direction: column}
+.ffond:has(input[id="tout"]:checked) + h .chrono x {display:flex}
