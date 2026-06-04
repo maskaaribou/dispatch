@@ -1,0 +1,76 @@
+.ftit,
+.ffond {
+    margin: auto;
+width:100%;
+}
+
+.ffond > labi2{
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin: 0 0 10px;
+}
+
+.fbloc1 div img {
+    max-width: 200px!important;max-height: 320px!important;
+}
+
+.ffond > .fbloc1 .infos {
+    width: 67%; height:60%; overflow-x: auto;padding:0 5px;
+}
+
+.ffond > .fbloc1 .cara {
+    width: 67%; height:35%; overflow-x: auto;padding:0 5px;
+}
+
+.nav-tabs.fiche {
+  width: 100%;
+  position: relative;
+  font-size: 12px;
+  margin: 10px 0;
+}
+
+.ongletr,
+.fonglet {
+  display: none;
+  margin-bottom: -10px;
+  max-height: 550px;
+  overflow: auto
+}
+
+input:checked+.fonglet {
+  display: flex;
+  flex-direction: column
+}
+
+.fonglet .fbloc1 img {
+  width: 100px;
+  height: 100px;
+}
+
+.nav-tabs.fiche:has(~input[id="proches"]:checked) label[for="proches"],
+.nav-tabs.fiche:has(~input[id="liens"]:checked) label[for="liens"],
+.nav-tabs.fiche:has(~input[id="plans"]:checked) label[for="plans"],
+.nav-tabs.fiche:has(~input[id="idees"]:checked) label[for="idees"],
+.nav-tabs.fiche:has(~input[id="timeline"]:checked) label[for="timeline"]{
+  background-color: var(--contrast);
+  color: var(--white);
+}
+
+.rtitle {
+  background: var(--white);
+  position: sticky;
+  top: 0
+}
+
+.fbloc1 a {
+  color: white
+}
+
+.fonglet .fbloc1 {
+    height:100px;
+}
+.fonglet .fbloc1 > .x {
+    width: 83%; height: 100px; overflow-x: auto;padding-right:5px
+}
+

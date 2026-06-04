@@ -1,0 +1,61 @@
+.signafelix {
+    display: flex;
+    gap:10px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.signafelix img {
+    height:150px;
+    object-fit: cover;
+    flex:1;
+}
+
+.signafelix .gif {
+background:url(https://preview.redd.it/penn-badgley-appreciation-v0-icnajj78gvxe1.gif?width=245&auto=webp&s=0ce1fa2a64f8a1fb904a2be47582a4c16aedacc2);
+    background-size:cover;
+    position: absolute;
+    height:170px;
+    width:170px;
+    border-radius: 100%;
+    border:10px solid var(--neutralLighter);
+}
+
+.signafelix .quote {
+    position: absolute;
+    width:100%;
+    bottom: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    height: 20px;
+    font-size: 17px;
+    background:var(--neutralLighter);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signafelix .quote:after {
+    content:"⟢ they may not wear a cape, but my dogs rescue me everyday ⟣";
+    background: var(--grad);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.signafelix:after {
+    content:"maskaaribou";
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    right:5px;
+    font-size: 10px;
+    font-variant: small-caps;
+    text-align: right;
+    width: 100%;
+    color:var(--neutralLighter);
+}
