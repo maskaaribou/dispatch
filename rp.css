@@ -124,16 +124,15 @@ body:has(li.switcheroo__squircle.active[data-id="230"]) {
   }
   .postrp md {
     display: block;
-    background: var(--fondgen);
+    background: var(--grad);
     background-size: 100% 100%;
     padding: 30px 40px;
     border-bottom: var(--border);
     text-align: center;
     font-family: "Special Elite";
-    color: white;
+    color: var(--white);
     font-size: 17px;
-    text-shadow: var(--textColor) 2px 2px 5px;
-    letter-spacing: 1.5px
+    line-height: 115%;
   }
   .postrp md:before {
     content: "“"
@@ -223,13 +222,14 @@ width:100%;
     justify-content: center;
     flex-wrap: wrap;
     gap: 10px;
-    background: var(--fondgen);
+    background: var(--grad);
     background-size: 100% 100%;
     padding: 20px 40px;
     font-family: "Special Elite";
     border-radius: 0 0 10px 10px;
     text-transform: uppercase;
     letter-spacing: .55px;
+	  
   }
   .postrp bt of,
   .postrp bt wn,
@@ -244,7 +244,8 @@ width:100%;
     align-items: center;
     justify-content: center;
     height: 25px;
-    padding: 15px 10px 13px
+    padding: 15px 10px 13px;
+	  color: var(--textColor);
   }
   .postrp bt of:before,
   .postrp bt wn:before,
