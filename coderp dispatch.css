@@ -205,6 +205,12 @@ width:100%;
   .postrp rp pnj {
     color: var(--textColorAccent)
   }
+  .postrp rp ava {
+    color: #A692C8
+  }
+  .postrp rp norah {
+    color: #E9C732
+  }
   .postrp bt {
     display: flex;
     align-items: center;
@@ -226,7 +232,7 @@ width:100%;
   .postrp bt hrp {
     background: var(--white);
     border-radius: 10px;
-    font-size: 11px;
+    font-size: 10px;
     font-weight: bold;
     display: flex;
     align-items: center;
