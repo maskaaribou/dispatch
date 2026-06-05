@@ -95,7 +95,7 @@ body:has(li.switcheroo__squircle.active[data-id="230"]) {
     height: 50%;
     width: 100%;
     object-fit: cover;
-    object-position: top;
+    object-position: top right;
   }
   .postrp t ti {
     text-align: right;
