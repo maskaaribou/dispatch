@@ -186,6 +186,8 @@ width:100%;
   .postrp rp d:before,
   .postrp rp r:before,
   .postrp rp v:before,
+  .postrp rp ava:before,
+  .postrp rp norah:before,
   .postrp rp pnj:before {
     content: "« "
   }
@@ -193,6 +195,8 @@ width:100%;
   .postrp rp d:after,
   .postrp rp r:after,
   .postrp rp v:after,
+  .postrp rp ava:after,
+  .postrp rp norah:after,
   .postrp rp pnj:after {
     content: " »"
   }
