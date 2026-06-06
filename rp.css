@@ -274,8 +274,13 @@ font-feature-settings: normal;
   }
   .postrp bt hrp {
     width: 100%;
-    font-family: "Playfair Display";
     text-transform: none;
+	font-size: 12px;
+    display: block;
+    line-height: 115%;
+    height: fit-content;
+    text-align: center;
+    padding: 15px 15px 8px;
   }
   .postrp bt hrp.hidden {
     display: none;
