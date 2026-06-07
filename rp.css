@@ -20,7 +20,7 @@ body:has(li.switcheroo__squircle.active[data-id="230"]) {
 	max-width:650px;
   }
   .postrp.felix {
-    --color: #CC5F31
+    --color: #DEB76D
   }
   .postrp.diana {
     --color: #8696AC
