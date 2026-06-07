@@ -225,7 +225,7 @@ body:has(li.switcheroo__squircle.active[data-id="230"]) {
     gap: 10px;
     background: var(--grad);
     background-size: 100% 100%;
-    padding: 20px 40px;
+    padding: 20px;
     font-family: "Special Elite";
     border-radius: 0 0 10px 10px;
     text-transform: uppercase;
