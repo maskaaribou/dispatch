@@ -1,6 +1,4 @@
-.signamina {
-    
-}
+.post.post_row:has(.signamina) .signature_div {display: none;}
 
 .post.post_row:has(.signamina) .post_profile .profil .profil_content:has(img) + .profil_separator {display: none;}
 
