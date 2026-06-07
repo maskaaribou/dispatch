@@ -161,7 +161,7 @@ body:has(li.switcheroo__squircle.active[data-id="230"]) {
   }
   .postrp rp {
     display: block;
-width:100%;
+    width:100%;
     margin: 0 auto;
     padding: 35px 40px;
     line-height: 190%;
@@ -181,7 +181,7 @@ width:100%;
   .postrp rp pnj {
     font-weight: 900;
     letter-spacing: .55px;
-    display: inline-block;
+    display: inline;
   }
   .postrp rp f:before,
   .postrp rp d:before,
