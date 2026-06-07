@@ -17,6 +17,7 @@ body:has(li.switcheroo__squircle.active[data-id="230"]) {
     margin: auto;
     position: relative;
     border-radius: 10px;
+	text-wrap: pretty;
 	max-width:650px;
   }
   .postrp.felix {
