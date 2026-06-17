@@ -1,0 +1,94 @@
+.signaconnor {
+    display: flex;
+    gap:10px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.signaconnor img {
+    height:150px;
+    object-fit: cover;
+    flex:1;
+}
+
+.signaconnor .gif {
+background:url(https://i.imgur.com/EvyKarI.gif);
+    background-size:cover;
+    position: absolute;
+    height:170px;
+    width:170px;
+    border-radius: 100%;
+    border:10px solid var(--neutralLighter);
+}
+
+.signaconnor .quote {
+    position: absolute;
+    width:100%;
+    bottom: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    height: 20px;
+    font-size: 17px;
+    background:var(--neutralLighter);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signaconnor .quote:after {
+    content:"⟢ You can't save everyone. But I have to try. ⟣";
+    background: var(--grad);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.signaconnor:after {
+    content:"maskaaribou";
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    right:5px;
+    font-size: 10px;
+    font-variant: small-caps;
+    text-align: right;
+    width: 100%;
+    color:var(--neutralLighter);
+}
+
+.post.post_row:has(.signaconnor) .post_profile .profil .profil_content img {
+    width: 185px;
+    height:100px;
+    object-fit:cover;
+}
+
+.post.post_row:has(.signaconnor) .post_profile .profil .profil_content:has(img) + .profil_separator {display: none;}
+
+.post.post_row:has(.signaconnor) .post_profile .infos-posteur .profil_label .label:before,
+.post.post_row:has(.signaconnor) .post_profile .profil .infos-posteur .profil_content strong:before {content:"⟢ ";font-weight: bold;}
+
+.post.post_row:has(.signaconnor) .post_profile .profil .infos-posteur:has(a) .profil_label .label:before {content:""}
+
+.post.post_row:has(.signaconnor) .post_profile .infos-posteur .profil_label .label {display: block;}
+
+.post.post_row:has(.signaconnor) .post_profile .profil .infos-posteur:not(.infos-posteur:first-of-type),
+.post.post_row:has(.signaconnor) .post_profile .rpg .infos-posteur {margin:0 0 5px}
+
+.post.post_row:has(.signaconnor) .post_profile .profil .infos-posteur .profil_content strong {
+    color: var(--contrast);
+    font-family: var(--font2);
+    line-height: normal;
+    font-size: 12px !important;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.post.post_row:has(.signaconnor) .post_profile .profil .infos-posteur:has(a) {
+    border-top:2px solid var(--textColorAccent);
+    padding: 10px 0 0;
+    margin: -10px 0 0!important
+}
