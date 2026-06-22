@@ -61,7 +61,7 @@ background:url(https://preview.redd.it/penn-badgley-appreciation-v0-icnajj78gvxe
 }
 
 .post.post_row:has(.signafelix) .post_profile .rpg, 
-.post.post_row:has(.signafelix) .post_profile .profil {text-wrap: pretty;text-align: justify;}
+.post.post_row:has(.signafelix) .post_profile .profil {text-wrap: pretty;text-align: justify;display:flex;flex-direction:column;flex-wrap:nowrap}
 
 .post.post_row:has(.signafelix) .post_profile .profil .infos-posteur hr {border-top: 2px solid var(--textColorAccent);margin: 5px 0 -7px !important;}
 
@@ -91,13 +91,14 @@ background:url(https://preview.redd.it/penn-badgley-appreciation-v0-icnajj78gvxe
 .post.post_row:has(.signafelix) .post_profile .profil .infos-posteur:has(a) {
     border-top: 2px solid var(--textColorAccent);
     padding: 10px 0 0;
-    margin: -10px 0 20px !important;
+    margin: -10px 0 3px !important;
 }
 
 .post.post_row:has(.signafelix) .post_profile .profil .infos-posteur:has(u) {
     border-top: 2px solid var(--textColorAccent);
     padding: 10px 0 0;
     margin: -10px 0 -10px !important;
+    order:1;
 }
 
 .post.post_row:has(.signafelix) .post_profile .profil .infos-posteur i,
