@@ -108,7 +108,8 @@ background:url(https://preview.redd.it/penn-badgley-appreciation-v0-icnajj78gvxe
     margin: 0 0 5px
 }
 
-.post.post_row:has(.signarick) .post_profile u {
+.post.post_row:has(.signafelix) .post_profile u {
     text-decoration-color: var(--textColorAccent);
     text-decoration-thickness: 1.5px;
 }
+
