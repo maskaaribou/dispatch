@@ -117,3 +117,8 @@ background-image:url(https://i.pinimg.com/originals/90/c8/d1/90c8d15840d9e82802e
     text-decoration-color: var(--textColorAccent);
     text-decoration-thickness: 1.5px;
 }
+
+.post.post_row:has(.signarick) .post_profile .profil .infos-posteur i:has(+ br + i) {
+    display: inline-block;
+    margin: 0 0 0
+}
