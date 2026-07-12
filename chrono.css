@@ -141,5 +141,7 @@ margin-top:10px
     color: var(--white);
 }
 
-.ffond:has(input[id="croissant"]:checked) + h .chrono lst {flex-direction: column}
-.ffond:has(input[id="tout"]:checked) + h .chrono x {display:flex}
+.ffond:has(input[id="croissant"]:checked) + h .chrono lst,
+.ffond:has(input[id="croissant2"]:checked) + h .chrono lst {flex-direction: column}
+.ffond:has(input[id="tout"]:checked) + h .chrono x,
+.ffond:has(input[id="tout2"]:checked) + h .chrono x{display:flex}
