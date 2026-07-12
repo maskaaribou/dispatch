@@ -183,9 +183,7 @@ input:checked+.fonglet {
 }
 
 .garderobe .fonglet {
-    margin-bottom: -5px;
-    max-height: 550px;
-    overflow: unset;
+    margin-bottom: -5px
 }
 
 .garderobe .soc-gallery {
