@@ -182,10 +182,6 @@ input:checked+.fonglet {
     color: var(--textColorAccent);
 }
 
-.ffond {
-    width: 650px!important;
-}
-
 .garderobe .fonglet {
     margin-bottom: -5px;
     max-height: 550px;
@@ -230,4 +226,15 @@ input:checked+.fonglet {
     object-fit:cover;
     border-radius:5px;
     border:10px solid var(--white);
+}
+
+.house {
+    display: flex;
+    gap:10px;
+}
+
+.house .r {
+    height:369px;
+    overflow: auto;
+    padding: 0 10px 0 0;
 }
