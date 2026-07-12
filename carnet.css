@@ -239,3 +239,22 @@ input:checked+.fonglet {
     overflow: auto;
     padding: 0 10px 0 0;
 }
+
+.ffond:has(input[id=papa]:checked) label[for=papa],
+.ffond:has(input[id=maman]:checked) label[for=maman],
+.ffond:has(input[id=bro]:checked) label[for=bro],
+.ffond:has(input[id=sis]:checked) label[for=sis],
+.ffond:has(input[id=polka]:checked) label[for=polka],
+.ffond:has(input[id=ava]:checked) label[for=ava],
+.ffond:has(input[id=christine]:checked) label[for=christine],
+.ffond:has(input[id=rei]:checked) label[for=rei],
+.ffond:has(input[id=basker]:checked) label[for=basker],
+.ffond:has(input[id=everyday]:checked) label[for=everyday],
+.ffond:has(input[id=formal]:checked) label[for=formal],
+.ffond:has(input[id=other]:checked) label[for=other],
+.ffond:has(input[id=ext]:checked) label[for=ext],
+.ffond:has(input[id=int]:checked) label[for=int] {
+    background-color: var(--contrast);
+    color: var(--white);
+}
+
