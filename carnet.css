@@ -74,3 +74,32 @@ input:checked+.fonglet {
     width: 83%; height: 100px; overflow-x: auto;padding-right:5px
 }
 
+.fonglet .fbloc2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding: 0 0 10px;
+    gap:10px;
+}
+.fonglet .fbloc2 .r {
+    flex:1;
+    height: 320px;
+}
+.fonglet .fbloc2 .r .infos {
+    height:320px;
+    overflow: auto;
+    padding: 0 10px 0 0
+}
+
+.nav-tabs.fiche label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-tabs.fiche label img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    display: block;
+}
