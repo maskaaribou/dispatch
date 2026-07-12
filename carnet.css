@@ -192,6 +192,7 @@ input:checked+.fonglet {
     display:flex;
     flex-wrap:wrap;
     gap:10px;
+    justify-content: center;
 }
 
 .garderobe .soc-gallery > div {
@@ -199,8 +200,8 @@ input:checked+.fonglet {
 }
 
 .garderobe .soc-gallery > div > img {
-    width:117px;
-    height:117px;
+    width: 149px!important;
+    height: 149px!important;
     object-fit:cover;
     border-radius:5px;
 }
