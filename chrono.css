@@ -17,7 +17,6 @@ align-items: flex-start;
 .chrono lst {
   display: flex;
   flex-direction: column-reverse;
-  gap: 25px;
 }
 
 h {
@@ -40,6 +39,8 @@ h ln {
   gap: 10px;
   justify-content: space-between;
   align-items: stretch;
+  border-bottom: 1px dashed var(--textColorAccent);
+    padding: 10px 0;
 }
 
 .chrono x:has(a) {
