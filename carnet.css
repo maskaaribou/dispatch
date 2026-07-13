@@ -81,6 +81,12 @@ input:checked+.fonglet {
     padding: 0 0 10px;
     gap:10px;
 }
+.fonglet .fbloc2 img {
+    height:320px;
+    width:200px;
+    object-fit: cover;
+}
+    
 .fonglet .fbloc2 .r {
     flex:1;
     height: 320px;
