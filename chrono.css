@@ -141,6 +141,12 @@ h ln {
     text-transform: uppercase;
 }
 
+.filter-buttons label i {
+    display: block;
+    text-align: center;
+    margin: 5px auto 0;
+}
+
 .filter-buttons input:checked+label {
     background-color: var(--contrast);
     color: var(--white);
