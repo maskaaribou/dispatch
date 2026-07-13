@@ -120,8 +120,13 @@ h ln {
 .filter-buttons {
     display: flex;
     justify-content: space-evenly;
-margin-top:10px
 }
+
+.filter-buttons x {
+    display: block;
+    width: 10px;
+}
+
 .filter-buttons input {display: none;}
 
 .filter-buttons label {
@@ -145,3 +150,4 @@ margin-top:10px
 .ffond:has(input[id="croissant2"]:checked) + h .chrono lst {flex-direction: column}
 .ffond:has(input[id="tout"]:checked) + h .chrono x,
 .ffond:has(input[id="tout2"]:checked) + h .chrono x{display:flex}
+.ffond:has(input[id="billings"]:checked) + h .chrono x:has(labo.lieu) {display: none}
