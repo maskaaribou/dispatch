@@ -120,6 +120,7 @@ h ln {
 .filter-buttons {
     display: flex;
     justify-content: space-evenly;
+  margin-top:10px;
 }
 
 .filter-buttons x {
