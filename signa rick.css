@@ -1,70 +1,68 @@
 .signarick {
-    display: flex;
-    gap:10px;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    border-radius: 10px;
-    overflow: hidden;
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	border-radius: 10px;
+	overflow: hidden;
 }
 
 .signarick img {
-    height:150px;
-    object-fit: cover;
-    object-position: bottom!important;
-    flex:1;
+	height: 150px;
+	object-fit: cover;
+	object-position: bottom!important;
+	flex: 1;
 }
 
-
-
 .signarick .gif {
-background-image:url(https://i.pinimg.com/originals/90/c8/d1/90c8d15840d9e82802e254a171b899f0.gif);
-    background-size:cover;
-    background-position: 65% 50%;
-    position: absolute;
-    height:170px;
-    width:170px;
-    border-radius: 100%;
-    border:10px solid var(--neutralLighter);
+	background-image: url(https://i.pinimg.com/originals/90/c8/d1/90c8d15840d9e82802e254a171b899f0.gif);
+	background-size: cover;
+	background-position: 65% 50%;
+	position: absolute;
+	height: 170px;
+	width: 170px;
+	border-radius: 100%;
+	border: 10px solid var(--neutralLighter);
 }
 
 .signarick .quote {
-    position: absolute;
-    width:100%;
-    bottom: 10px;
-    text-transform: uppercase;
-    font-weight: bold;
-    height: 20px;
-    font-size: 17px;
-    background:var(--neutralLighter);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	position: absolute;
+	width: 100%;
+	bottom: 10px;
+	text-transform: uppercase;
+	font-weight: bold;
+	height: 20px;
+	font-size: 17px;
+	background: var(--neutralLighter);
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .signarick .quote qt {
-    background: var(--grad);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
+	background: var(--grad);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	color: transparent;
 }
 
 .signarick .quote qt strike {
-    text-decoration: line-through wavy 2px;
+	text-decoration: line-through wavy 2px;
 }
 
 .signarick:after {
-    content:"maskaaribou";
-    display: block;
-    position: absolute;
-    bottom: -2px;
-    right:5px;
-    font-size: 10px;
-    font-variant: small-caps;
-    text-align: right;
-    width: 100%;
-    color:var(--neutralLighter);
+	content: "maskaaribou";
+	display: block;
+	position: absolute;
+	bottom: -2px;
+	right: 5px;
+	font-size: 10px;
+	font-variant: small-caps;
+	text-align: right;
+	width: 100%;
+	color: var(--neutralLighter);
 }
 
 .post.post_row:has(.signarick) {
@@ -169,37 +167,37 @@ background-image:url(https://i.pinimg.com/originals/90/c8/d1/90c8d15840d9e82802e
 			.infos-posteur:nth-of-type(7) .profil_content strong:nth-of-type(2):before {
 				content: "\f787"
 			}
+			.infos-posteur:nth-of-type(7) .profil_content strong:nth-of-type(3):before {
+				content: "\e78f"
+			}
+			.infos-posteur:nth-of-type(7) .profil_content strong:nth-of-type(4):before {
+				content: "\f06e"
+			}
+			.infos-posteur:nth-of-type(7) .profil_content strong:nth-of-type(5):before {
+				content: "\e54e"
+			}
+			.infos-posteur:nth-of-type(7) .profil_content strong:nth-of-type(6):before {
+				content: "\e0ab"
+			}
+			.infos-posteur:nth-of-type(7) .profil_content strong:nth-of-type(7):before {
+				content: "\f559"
+			}
+			.infos-posteur:nth-of-type(7) .profil_content strong:nth-of-type(8):before {
+				content: "\f5a2"
+			}
+			.infos-posteur:nth-of-type(8) .profil_label {
+				display: none;
+			}
+			.infos-posteur:nth-of-type(8) .profil_content strong:nth-of-type(1):before {
+				content: "\e212"
+			}
+			.infos-posteur:nth-of-type(8) .profil_content strong:nth-of-type(2):before {
+				content: "\f095"
+			}
 		}
-		.infos-posteur:nth-of-type(7) .profil_content strong:nth-of-type(3):before {
-			content: "\e78f"
+		u {
+			text-decoration-color: var(--textColorAccent);
+			text-decoration-thickness: 1.5px;
 		}
-		.infos-posteur:nth-of-type(7) .profil_content strong:nth-of-type(4):before {
-			content: "\f06e"
-		}
-		.infos-posteur:nth-of-type(7) .profil_content strong:nth-of-type(5):before {
-			content: "\e54e"
-		}
-		.infos-posteur:nth-of-type(7) .profil_content strong:nth-of-type(6):before {
-			content: "\e0ab"
-		}
-		.infos-posteur:nth-of-type(7) .profil_content strong:nth-of-type(7):before {
-			content: "\f559"
-		}
-		.infos-posteur:nth-of-type(7) .profil_content strong:nth-of-type(8):before {
-			content: "\f5a2"
-		}
-		.infos-posteur:nth-of-type(8) .profil_label {
-			display: none;
-		}
-		.infos-posteur:nth-of-type(8) .profil_content strong:nth-of-type(1):before {
-			content: "\e212"
-		}
-		.infos-posteur:nth-of-type(8) .profil_content strong:nth-of-type(2):before {
-			content: "\f095"
-		}
-	}
-	u {
-		text-decoration-color: var(--textColorAccent);
-		text-decoration-thickness: 1.5px;
 	}
 }
