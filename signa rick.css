@@ -195,6 +195,44 @@
 				content: "\f095"
 			}
 		}
+		.rpg {
+			.infos-posteur .profil_label .label:before,
+			.profil_content strong:before {
+				font-family: "Font Awesome 7 Pro";
+				font-weight: 400!important;
+				margin: 0 5px 0 0;
+			}
+			.infos-posteur:nth-of-type(1) .profil_label .label:before {
+				content: "\f007"!important;
+			}
+			.infos-posteur:nth-of-type(2) .profil_label .label:before {
+				content: "\e1de"!important;
+			}
+            .infos-posteur:nth-of-type(3):not(:has(~ .infos-posteur:nth-of-type(5))) .profil_label .label::before {
+                content: "\e1b9" !important;
+            }
+            .infos-posteur:nth-of-type(3):has(~ .infos-posteur:nth-of-type(5)) .profil_label .label::before {
+                content: "\e14f" !important;
+            }
+			.infos-posteur:nth-of-type(4) .profil_label .label:before {
+				content: "\f6ad"!important;font-weight: 800!important
+			}
+			.infos-posteur:nth-of-type(5) .profil_label .label:before {
+				content: "\e1b9"!important;
+			}
+			.infos-posteur:nth-of-type(6) .profil_label .label:before {
+				content: "\f5fd"!important;
+			}
+			.infos-posteur:nth-of-type(7) .profil_label .label:before {
+				content: "\f133"!important;
+			}
+			.infos-posteur:nth-of-type(8) .profil_label .label:before {
+				content: "\f05e"!important;
+			}
+			.infos-posteur:nth-of-type(9) .profil_label .label:before {
+				content: "\f071"!important;
+			}
+		}
 		u {
 			text-decoration-color: var(--textColorAccent);
 			text-decoration-thickness: 1.5px;
