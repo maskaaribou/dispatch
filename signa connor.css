@@ -97,7 +97,7 @@ background:url(https://i.imgur.com/EvyKarI.gif);
 .post.post_row:has(.signaconnor) .post_profile .profil .infos-posteur:has(u) {
     border-top: 2px solid var(--textColorAccent);
     padding: 10px 0 0;
-    margin: -10px 0 -10px !important;
+    margin: -10px 0 0px !important;
     order:1;
 }
 
