@@ -1,4 +1,11 @@
-.post.post_row:has(.signamina) .signature_div {display: none;}
+@import url("https://kit-pro.fontawesome.com/releases/v7.2.0/css/pro.min.css");
+
+.post.post_row:has(.signamina) .post_profile .rpg, 
+.post.post_row:has(.signamina) .post_profile .profil {text-wrap: pretty;text-align: justify;display:flex;flex-direction:column;flex-wrap:nowrap}
+
+.post.post_row:has(.signamina) .post_profile .profil .infos-posteur hr {border-top: 2px solid var(--textColorAccent);margin: 5px 0 -7px !important;}
+
+.post.post_row:has(.signamina) .post_profile .profil .profil_content img {width: 185px;height:100px;object-fit:cover;}
 
 .post.post_row:has(.signamina) .post_profile .profil .profil_content:has(img) + .profil_separator {display: none;}
 
@@ -9,7 +16,7 @@
 
 .post.post_row:has(.signamina) .post_profile .infos-posteur .profil_label .label {display: block;}
 
-.post.post_row:has(.signamina) .post_profile .profil .infos-posteur:not(.infos-posteur:first-of-type),
+.post.post_row:has(.signamina) .post_profile .profil .infos-posteur,
 .post.post_row:has(.signamina) .post_profile .rpg .infos-posteur {margin:0 0 5px}
 
 .post.post_row:has(.signamina) .post_profile .profil .infos-posteur .profil_content strong {
@@ -22,7 +29,35 @@
 }
 
 .post.post_row:has(.signamina) .post_profile .profil .infos-posteur:has(a) {
-    border-top:2px solid var(--textColorAccent);
+    border-top: 2px solid var(--textColorAccent);
     padding: 10px 0 0;
-    margin: -10px 0 0!important
+    margin: -10px 0 3px !important;
+}
+
+.post.post_row:has(.signamina) .post_profile .profil .infos-posteur:has(u) {
+    border-top: 2px solid var(--textColorAccent);
+    padding: 10px 0 0;
+    margin: -10px 0 -10px !important;
+    order:1;
+}
+
+.post.post_row:has(.signamina) .post_profile .profil .infos-posteur i {
+    display: inline-block;
+    margin: 0 0 5px
+}
+
+.post.post_row:has(.signamina) .post_profile u {
+    text-decoration-color: var(--textColorAccent);
+    text-decoration-thickness: 1.5px;
+}
+
+.post.post_row:has(.signamina) .post_profile .profil .infos-posteur i:has(+ br + i) {
+    display: inline-block;
+    margin: 0 0 0
+}
+
+.post.post_row:has(.signamina) .post_profile .profil .infos-posteur strong i:before {
+    content:"\f16d";
+    font-family: "Font Awesome 7 Brands";
+    font-style: normal;
 }
