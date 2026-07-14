@@ -248,6 +248,10 @@ input:checked+.fonglet {
     padding: 0 10px 0 0;
 }
 
+.container:has(.ficheannexemad) .signature_div {
+    display: none;
+}
+
 .ffond:has(input[id=papa]:checked) label[for=papa],
 .ffond:has(input[id=maman]:checked) label[for=maman],
 .ffond:has(input[id=bro]:checked) label[for=bro],
