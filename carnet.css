@@ -199,10 +199,12 @@ input:checked+.fonglet {
     flex-wrap:wrap;
     gap:10px;
     justify-content: center;
+    padding: 0 0 5px;
 }
 
 .garderobe .soc-gallery > div {
     position:relative;
+    height: 149px;
 }
 
 .garderobe .soc-gallery > div > img {
