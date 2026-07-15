@@ -60,56 +60,177 @@ background:url(https://preview.redd.it/penn-badgley-appreciation-v0-icnajj78gvxe
     color:var(--neutralLighter);
 }
 
-.post.post_row:has(.signafelix) .post_profile .rpg, 
-.post.post_row:has(.signafelix) .post_profile .profil {text-wrap: pretty;text-align: justify;display:flex;flex-direction:column;flex-wrap:nowrap}
-
-.post.post_row:has(.signafelix) .post_profile .profil .infos-posteur hr {border-top: 2px solid var(--textColorAccent);margin: 5px 0 -7px !important;}
-
-.post.post_row:has(.signafelix) .post_profile .profil .profil_content img {width: 185px;height:100px;object-fit:cover;}
-
-.post.post_row:has(.signafelix) .post_profile .profil .profil_content:has(img) + .profil_separator {display: none;}
-
-.post.post_row:has(.signafelix) .post_profile .infos-posteur .profil_label .label:before,
-.post.post_row:has(.signafelix) .post_profile .profil .infos-posteur .profil_content strong:before {content:"⟢ ";font-weight: bold;}
-
-.post.post_row:has(.signafelix) .post_profile .profil .infos-posteur:has(a) .profil_label .label:before {content:""}
-
-.post.post_row:has(.signafelix) .post_profile .infos-posteur .profil_label .label {display: block;}
-
-.post.post_row:has(.signafelix) .post_profile .profil .infos-posteur:not(.infos-posteur:first-of-type),
-.post.post_row:has(.signafelix) .post_profile .rpg .infos-posteur {margin:0 0 5px}
-
-.post.post_row:has(.signafelix) .post_profile .profil .infos-posteur .profil_content strong {
-    color: var(--contrast);
-    font-family: var(--font2);
-    line-height: normal;
-    font-size: 12px !important;
-    font-weight: 500;
-    text-transform: uppercase;
+.post.post_row:has(.signafelix) {
+	.post_profile {
+		.rpg,
+		.profil {
+			text-wrap: pretty;
+			text-align: justify;
+			display: flex;
+			flex-direction: column;
+			flex-wrap: nowrap;
+			.infos-posteur {
+				hr {
+					border-top: 2px solid var(--textColorAccent);
+					margin: 5px 0 -7px !important;
+				}
+				.profil_label .label::before,
+				.profil_content strong::before {
+					content: "⟢ ";
+					font-weight: bold;
+				}
+				.profil_label .label {
+					display: block;
+				}
+				.profil_content {
+					img {
+						width: 185px;
+						height: 100px;
+						object-fit: cover;
+					}
+					strong {
+						color: var(--contrast);
+						font-family: var(--font2);
+						line-height: normal;
+						font-size: 12px !important;
+						font-weight: 500;
+						text-transform: uppercase;
+					}
+					&:has(img)+.profil_separator {
+						display: none;
+					}
+				}
+				&:has(a) {
+					.profil_label .label::before {
+						content: "";
+					}
+					border-top: 2px solid var(--textColorAccent);
+					padding: 10px 0 0;
+					margin: -10px 0 3px !important;
+				}
+				&:has(u) {
+					border-top: 2px solid var(--textColorAccent);
+					padding: 10px 0 0;
+					margin: -10px 0 0 !important;
+					order: 1;
+				}
+				&:not(:first-of-type) {
+					margin: 0 0 5px;
+				}
+				i {
+					display: inline-block;
+					margin: 0 0 5px;
+					&:has(+ br + i) {
+						margin: 0;
+					}
+				}
+			}
+		}
+		.profil {
+			.infos-posteur .profil_label .label:before,
+			.profil_content strong:before {
+				font-family: "Font Awesome 7 Pro";
+				font-weight: 400!important;
+				margin: 0 5px 0 0;
+			}
+			.infos-posteur:nth-of-type(1):has(img)+.infos-posteur:nth-of-type(2) .profil_label .label::before {
+				content: "\f1fd";
+			}
+			.infos-posteur:nth-of-type(1):not(:has(img)) .profil_label .label::before {
+				content: "\f1fd";
+			}
+			.infos-posteur:nth-of-type(1):has(img)~.infos-posteur:nth-of-type(3) .profil_label .label::before {
+				content: "\f0b1";
+			}
+			.infos-posteur:nth-of-type(1):not(:has(img))+.infos-posteur:nth-of-type(2) .profil_label .label::before {
+				content: "\f0b1";
+			}
+			.infos-posteur:nth-of-type(4) .profil_label .label:before {
+				content: "\f81b";
+			}
+			.infos-posteur:nth-of-type(5) .profil_label .label:before {
+				content: "\e1b1";
+			}
+			.infos-posteur:nth-of-type(6) .profil_label .label:before {
+				content: "\f228";
+			}
+			.infos-posteur:nth-of-type(7) .profil_content strong:nth-of-type(1):before {
+				content: "\f16d";
+				font-family: "Font Awesome 7 Brands";
+				margin: 0 6px 0 2px
+			}
+			.infos-posteur:nth-of-type(7) .profil_content strong:nth-of-type(2):before {
+				content: "\f787"
+			}
+			.infos-posteur:nth-of-type(7) .profil_content strong:nth-of-type(3):before {
+				content: "\f1b0"
+			}
+			.infos-posteur:nth-of-type(7) .profil_content strong:nth-of-type(4):before {
+				content: "\f259"
+			}
+			.infos-posteur:nth-of-type(7) .profil_content strong:nth-of-type(5):before {
+				content: "\f015"
+			}
+			.infos-posteur:nth-of-type(7) .profil_content strong:nth-of-type(6):before {
+				content: "\e0ab"
+			}
+			.infos-posteur:nth-of-type(7) .profil_content strong:nth-of-type(7):before {
+				content: "\f559"
+			}
+			.infos-posteur:nth-of-type(7) .profil_content strong:nth-of-type(8):before {
+				content: "\f5a2"
+			}
+			.infos-posteur:nth-of-type(8) .profil_label {
+				display: none;
+			}
+			.infos-posteur:nth-of-type(8) .profil_content strong:nth-of-type(1):before {
+				content: "\e212"
+			}
+			.infos-posteur:nth-of-type(8) .profil_content strong:nth-of-type(2):before {
+				content: "\f095"
+			}
+		}
+		.rpg {
+			.infos-posteur .profil_label .label:before,
+			.profil_content strong:before {
+				font-family: "Font Awesome 7 Pro";
+				font-weight: 400!important;
+				margin: 0 5px 0 0;
+			}
+			.infos-posteur:nth-of-type(1) .profil_label .label:before {
+				content: "\f007"!important;
+			}
+			.infos-posteur:nth-of-type(2) .profil_label .label:before {
+				content: "\e1de"!important;
+			}
+            .infos-posteur:nth-of-type(3):not(:has(~ .infos-posteur:nth-of-type(5))) .profil_label .label::before {
+                content: "\e1b9" !important;
+            }
+            .infos-posteur:nth-of-type(3):has(~ .infos-posteur:nth-of-type(5)) .profil_label .label::before {
+                content: "\e14f" !important;
+            }
+			.infos-posteur:nth-of-type(4) .profil_label .label:before {
+				content: "\f6ad"!important;font-weight: 800!important
+			}
+			.infos-posteur:nth-of-type(5) .profil_label .label:before {
+				content: "\e1b9"!important;
+			}
+			.infos-posteur:nth-of-type(6) .profil_label .label:before {
+				content: "\f5fd"!important;
+			}
+			.infos-posteur:nth-of-type(7) .profil_label .label:before {
+				content: "\f133"!important;
+			}
+			.infos-posteur:nth-of-type(8) .profil_label .label:before {
+				content: "\f05e"!important;
+			}
+			.infos-posteur:nth-of-type(9) .profil_label .label:before {
+				content: "\f071"!important;
+			}
+		}
+		u {
+			text-decoration-color: var(--textColorAccent);
+			text-decoration-thickness: 1.5px;
+		}
+	}
 }
-
-.post.post_row:has(.signafelix) .post_profile .profil .infos-posteur:has(a) {
-    border-top: 2px solid var(--textColorAccent);
-    padding: 10px 0 0;
-    margin: -10px 0 3px !important;
-}
-
-.post.post_row:has(.signafelix) .post_profile .profil .infos-posteur:has(u) {
-    border-top: 2px solid var(--textColorAccent);
-    padding: 10px 0 0;
-    margin: -10px 0 0px !important;
-    order:1;
-}
-
-.post.post_row:has(.signafelix) .post_profile .profil .infos-posteur i,
-.post.post_row:has(.signafelix) .post_profile .profil .infos-posteur a[href="https://dispatch.forumactif.com/t1813-felix-sullivan-thedogfather#34944"],
-.post.post_row:has(.signafelix) .post_profile .profil .infos-posteur a[href="https://dispatch.forumactif.com/t1816-felix-sullivan-what-are-you-give-me-my-phone-back#34952"] {
-    display: inline-block;
-    margin: 0 0 5px
-}
-
-.post.post_row:has(.signafelix) .post_profile u {
-    text-decoration-color: var(--textColorAccent);
-    text-decoration-thickness: 1.5px;
-}
-
