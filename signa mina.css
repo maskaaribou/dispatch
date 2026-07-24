@@ -10,6 +10,7 @@
 			flex-direction: column;
 			flex-wrap: nowrap;
 			.infos-posteur {
+				margin: 0 0 5px;
 				hr {
 					border-top: 2px solid var(--textColorAccent);
 					margin: 5px 0 -7px !important;
@@ -53,9 +54,6 @@
 					padding: 10px 0 0;
 					margin: -10px 0 0 !important;
 					order: 1;
-				}
-				&:not(:first-of-type) {
-					margin: 0 0 5px;
 				}
 				i {
 					display: inline-block;
