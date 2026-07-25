@@ -1,13 +1,9 @@
 @import url("https://kit-pro.fontawesome.com/releases/v7.2.0/css/pro.min.css");
 
-.post.post_row:has(.post_avatar img[src="https://sig.grumpybumpers.com/host/FelixASullivan.gif"]),
-.post.post_row:has(.post_avatar img[src="https://2img.net/i.imgur.com/HuqAvNU.jpeg"]),
-.post.post_row:has(.post_avatar img[src="https://sig.grumpybumpers.com/host/RickAddams.gif"]),
-.post.post_row:has(.post_avatar img[src="https://sig.grumpybumpers.com/host/RonnieSullivan2.gif"]),
-body:has(li.switcheroo__squircle.active[data-id="220"]),
-body:has(li.switcheroo__squircle.active[data-id="219"]),
-body:has(li.switcheroo__squircle.active[data-id="231"]),
-body:has(li.switcheroo__squircle.active[data-id="230"]) {
+.post.post_row:has(.signafelix),
+.post.post_row:has(.signarick),
+.post.post_row:has(.signaconnor),
+.post.post_row:has(.signamina) {
   .postrp {
     display: flex;
     flex-direction: column;
