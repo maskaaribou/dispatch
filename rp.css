@@ -6,8 +6,8 @@
 #preview:has(.signarick),
 .post.post_row:has(.signaconnor),
 #preview:has(.signaconnor),
-.post.post_row:has(.signamina)
-#preview:has(.signamina), {
+.post.post_row:has(.signamina),
+#preview:has(.signamina) {
   .postrp {
     display: flex;
     flex-direction: column;
