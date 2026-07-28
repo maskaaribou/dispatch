@@ -33,6 +33,7 @@
     --color: #be3533
   }
 .postrp.connor {--color:#DF2E42}
+.postrp.emery {--color:#A789BE}
   .postrp:after {
     content: "maskaaribou";
     display: block;
