@@ -32,6 +32,7 @@
   .postrp.ronnie {
     --color: #be3533
   }
+.postrp.connor {--color:#DF2E42}
   .postrp:after {
     content: "maskaaribou";
     display: block;
