@@ -178,6 +178,8 @@
   .postrp rp d,
   .postrp rp r,
   .postrp rp v,
+  .postrp rp c,
+  .postrp rp e,
   .postrp rp ava,
   .postrp rp norah,
   .postrp rp pnj {
@@ -189,6 +191,8 @@
   .postrp rp d:before,
   .postrp rp r:before,
   .postrp rp v:before,
+  .postrp rp c:before,
+  .postrp rp e:before,
   .postrp rp ava:before,
   .postrp rp norah:before,
   .postrp rp pnj:before {
@@ -198,6 +202,8 @@
   .postrp rp d:after,
   .postrp rp r:after,
   .postrp rp v:after,
+  .postrp rp c:after,
+  .postrp rp e:after,
   .postrp rp ava:after,
   .postrp rp norah:after,
   .postrp rp pnj:after {
@@ -206,7 +212,9 @@
   .postrp rp f,
   .postrp rp d,
   .postrp rp r,
-  .postrp rp v {
+  .postrp rp v,
+  .postrp rp c,
+  .postrp rp e {
     color: var(--color)
   }
   .postrp rp pnj {
