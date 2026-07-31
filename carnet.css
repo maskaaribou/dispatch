@@ -236,6 +236,8 @@ input:checked+.fonglet {
     border:10px solid var(--white);
 }
 
+.garderobe b {display: block;text-align: center;}
+
 .house {
     display: flex;
     gap:10px;
