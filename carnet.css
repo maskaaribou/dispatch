@@ -266,7 +266,9 @@ input:checked+.fonglet {
 .ffond:has(input[id=formal]:checked) label[for=formal],
 .ffond:has(input[id=other]:checked) label[for=other],
 .ffond:has(input[id=ext]:checked) label[for=ext],
-.ffond:has(input[id=int]:checked) label[for=int] {
+.ffond:has(input[id=int]:checked) label[for=int],
+.ffond:has(input[id=ext2]:checked) label[for=ext2],
+.ffond:has(input[id=int2]:checked) label[for=int2] {
     background-color: var(--contrast);
     color: var(--white);
 }
