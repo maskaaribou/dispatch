@@ -223,15 +223,21 @@
 				content: "\e1b9"!important;
 			}
 			.infos-posteur:nth-of-type(6) .profil_label .label:before {
-				content: "\f5fd"!important;
+				content: "\f25c"!important;
+			}
+			.infos-posteur:nth-of-type(6) strong:before {
+				content: "\e33b"!important;
 			}
 			.infos-posteur:nth-of-type(7) .profil_label .label:before {
-				content: "\f133"!important;
+				content: "\f5fd"!important;
 			}
 			.infos-posteur:nth-of-type(8) .profil_label .label:before {
-				content: "\f05e"!important;
+				content: "\f133"!important;
 			}
 			.infos-posteur:nth-of-type(9) .profil_label .label:before {
+				content: "\f05e"!important;
+			}
+			.infos-posteur:nth-of-type(10) .profil_label .label:before {
 				content: "\f071"!important;
 			}
 		}
