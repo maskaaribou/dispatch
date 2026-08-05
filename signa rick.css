@@ -115,12 +115,6 @@
 					padding: 10px 0 0;
 					margin: -10px 0 3px !important;
 				}
-				&:has(u) {
-					border-top: 2px solid var(--textColorAccent);
-					padding: 10px 0 0;
-					margin: -10px 0 0 !important;
-					order: 1;
-				}
 				&:not(:first-of-type) {
 					margin: 0 0 5px;
 				}
@@ -139,6 +133,12 @@
 				font-family: "Font Awesome 7 Pro";
 				font-weight: 400!important;
 				margin: 0 5px 0 0;
+			}
+			&:has(u) {
+				border-top: 2px solid var(--textColorAccent);
+				padding: 10px 0 0;
+				margin: -10px 0 0 !important;
+				order: 1;
 			}
 			.infos-posteur:nth-of-type(1):has(img)+.infos-posteur:nth-of-type(2) .profil_label .label::before {
 				content: "\f1fd";
