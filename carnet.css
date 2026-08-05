@@ -12,7 +12,7 @@ width:100%;
 }
 
 .fbloc1 div img {
-    max-width: 200px!important;max-height: 320px!important;
+    max-width: 200px!important;max-height: 320px!important;width: 200px;height: 320px;
 }
 
 .ffond > .fbloc1 .infos {
