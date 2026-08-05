@@ -110,12 +110,6 @@ background:url(https://preview.redd.it/penn-badgley-appreciation-v0-icnajj78gvxe
 					padding: 10px 0 0;
 					margin: -10px 0 3px !important;
 				}
-				&:has(u) {
-					border-top: 2px solid var(--textColorAccent);
-					padding: 10px 0 0;
-					margin: -10px 0 0 !important;
-					order: 1;
-				}
 				&:not(:first-of-type) {
 					margin: 0 0 5px;
 				}
@@ -134,6 +128,12 @@ background:url(https://preview.redd.it/penn-badgley-appreciation-v0-icnajj78gvxe
 				font-family: "Font Awesome 7 Pro";
 				font-weight: 400!important;
 				margin: 0 5px 0 0;
+			}
+			&:has(u) {
+				border-top: 2px solid var(--textColorAccent);
+				padding: 10px 0 0;
+				margin: -10px 0 0 !important;
+				order: 1;
 			}
 			.infos-posteur:nth-of-type(1):has(img)+.infos-posteur:nth-of-type(2) .profil_label .label::before {
 				content: "\f1fd";
@@ -165,13 +165,13 @@ background:url(https://preview.redd.it/penn-badgley-appreciation-v0-icnajj78gvxe
 				content: "\f787"
 			}
 			.infos-posteur:nth-of-type(7) .profil_content strong:nth-of-type(3):before {
-				content: "\f1b0"
+				content: "\e78f"
 			}
 			.infos-posteur:nth-of-type(7) .profil_content strong:nth-of-type(4):before {
-				content: "\f259"
+				content: "\f06e"
 			}
 			.infos-posteur:nth-of-type(7) .profil_content strong:nth-of-type(5):before {
-				content: "\f015"
+				content: "\e54e"
 			}
 			.infos-posteur:nth-of-type(7) .profil_content strong:nth-of-type(6):before {
 				content: "\e0ab"
@@ -218,15 +218,21 @@ background:url(https://preview.redd.it/penn-badgley-appreciation-v0-icnajj78gvxe
 				content: "\e1b9"!important;
 			}
 			.infos-posteur:nth-of-type(6) .profil_label .label:before {
-				content: "\f5fd"!important;
+				content: "\f25c"!important;
+			}
+			.infos-posteur:nth-of-type(6) strong:before {
+				content: "\e33b"!important;
 			}
 			.infos-posteur:nth-of-type(7) .profil_label .label:before {
-				content: "\f133"!important;
+				content: "\f5fd"!important;
 			}
 			.infos-posteur:nth-of-type(8) .profil_label .label:before {
-				content: "\f05e"!important;
+				content: "\f133"!important;
 			}
 			.infos-posteur:nth-of-type(9) .profil_label .label:before {
+				content: "\f05e"!important;
+			}
+			.infos-posteur:nth-of-type(10) .profil_label .label:before {
 				content: "\f071"!important;
 			}
 		}
