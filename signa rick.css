@@ -134,11 +134,12 @@
 				font-weight: 400!important;
 				margin: 0 5px 0 0;
 			}
-			&:has(u) {
+			.infos-posteur:has(u) {
 				border-top: 2px solid var(--textColorAccent);
 				padding: 10px 0 0;
 				margin: -10px 0 0 !important;
 				order: 1;
+                display: block;
 			}
 			.infos-posteur:nth-of-type(1):has(img)+.infos-posteur:nth-of-type(2) .profil_label .label::before {
 				content: "\f1fd";
@@ -245,5 +246,7 @@
 			text-decoration-color: var(--textColorAccent);
 			text-decoration-thickness: 1.5px;
 		}
+	}
+}
 	}
 }
