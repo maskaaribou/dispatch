@@ -1,0 +1,130 @@
+.medical {
+    display: flex;
+    gap:10px;
+    flex-wrap: wrap;
+    font-size:13px;
+    text-wrap:pretty;
+    filter: blur(5px);
+    transition: 300ms all 
+}
+
+.ffond:has(#medical-access:checked) ~ .medical {
+  filter: none;
+}
+
+.medical x {
+    display: block;
+    border-bottom:1px dotted darkgray;
+    width:calc(50% - 5px);
+}
+
+.medical y {
+    display: block;
+    border-bottom:1px dotted darkgray;
+    width:100%;
+}
+
+.medical div.ante {
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    gap:10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
+
+.medical div.hosp {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) max-content;
+}
+
+.medical z {
+    display: flex;
+    flex-wrap: wrap;
+    gap:5px;
+    align-items: center;
+    border:1px solid darkgray;
+    font-weight: bold;
+}
+
+.medical .ante z b,.medical .ante z strong {
+    background:var(--contrastLight);
+    padding:0 5px;
+    font-size:20px;
+    font-weight: normal;
+    border-right:1px solid darkgray;
+    border-bottom:1px solid darkgray;
+}
+
+.medical .hosp z b,.medical .hosp z strong {
+    display: block;
+    width: 100%;
+    background:var(--contrastLight);
+    padding:5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.medical .hosp z:not(:has(b)) {
+    padding: 5px;
+    font-weight: normal;
+}
+
+.medical b,.medical strong {
+    text-transform: uppercase;
+}
+
+.medical .ante + z {
+    width:100%;
+    padding:5px;
+    display: block;
+    font-weight: normal;
+    min-height:60px!important;
+}
+
+.medical .ante + z x {
+    background:var(--contrastLight);
+    padding:5px;
+    text-align: center;
+    border-right:1px solid darkgray;
+    border-bottom:1px solid darkgray;
+    float:left;
+    margin:-5px 10px -5px -5px;
+    width: max-content;
+    font-weight: bold;
+}
+
+.medical .hosp z x {
+    display: inline;
+    width:100%;
+    border:none;
+}
+
+.medical flab {
+    width:100%;
+}
+
+.medical-button {
+  cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.ffond:has(#medical-access){
+    text-align: center;    
+}
+
+.ffond:has(#medical-access) input,
+.ffond:has(#medical-access:checked){
+  display: none
+}
+
+.ffond:has(#medical-access) label {
+    background:var(--contrastLight);
+    padding:10px;
+    text-align: center;
+    display: block;
+    width:max-content;
+    margin:10px auto 5px;
+}
