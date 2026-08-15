@@ -57,7 +57,7 @@
     border-bottom:1px solid darkgray;
 }
 
-.medical .hosp z b,.medical .hosp z strong {
+.medical .hosp z b {
     display: block;
     width: 100%;
     background:var(--contrastLight);
