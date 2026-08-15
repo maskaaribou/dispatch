@@ -6,6 +6,8 @@
 #preview:has(.signarick),
 .post.post_row:has(.signaconnor),
 #preview:has(.signaconnor),
+.post.post_row:has(.signajacob),
+#preview:has(.signajacob),
 .post.post_row:has(.signamina),
 #preview:has(.signamina) {
   .postrp {
@@ -45,6 +47,10 @@
     position: absolute;
     bottom: -12px;
   }
+	.postrp hr {
+    margin: 15px 0 0;
+    border-top: 2px solid var(--color);
+	}
   .postrp u,
   .postrp strike {
     text-decoration-color: var(--color)
