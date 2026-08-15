@@ -1,5 +1,9 @@
 @import url("https://kit-pro.fontawesome.com/releases/v7.2.0/css/pro.min.css");
 
+.post.post_row.post--36353 .fbloc1 img:nth-of-type(2) {
+    content:url(https://i.pinimg.com/736x/0a/8e/ce/0a8ece37a5e5d49bfabac89975a35646.jpg);
+}
+
 .signarick {
 	display: flex;
 	gap: 10px;
