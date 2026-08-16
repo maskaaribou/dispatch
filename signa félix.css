@@ -236,6 +236,42 @@ background:url(https://preview.redd.it/penn-badgley-appreciation-v0-icnajj78gvxe
 			.infos-posteur:nth-of-type(10) .profil_label .label:before {
 				content: "\f071"!important;
 			}
+
+			
+
+
+
+			.rpg .infos-posteur:nth-of-type(7) .profil_content,
+			.rpg .infos-posteur:nth-of-type(9) .profil_content,
+			.rpg .infos-posteur:nth-of-type(10) .profil_content {
+			    font-size: 0
+			}
+
+			.rpg .infos-posteur:nth-of-type(7) .profil_content:after{
+			    content:"🔥 Connor Dalma \A 🚨 Jacob Williams \A 🔫 Rick Addams";
+			    font-size:12px;
+			    white-space: pre;
+			    text-wrap: pretty;
+			    background-image: linear-gradient(#DF2E42 33%, #8b0000 33%, #8b0000 66%,#7D92C8 66%);
+			    color: transparent;
+			    background-clip: text;
+			    display: inline-block;
+			    font-weight: bold;
+			}
+			
+			.rpg .infos-posteur:nth-of-type(9) .profil_content:after{
+			    content:"• Abus et crimes sexuels \A • Deuil et décès d’un parent \A • Procédures médicales en détail (injections & piqûres notamment) \A • Relations avec rapport de force ou de pouvoir";
+			    font-size:12px;
+			    white-space: pre;
+			    text-wrap: pretty;
+			}
+			
+			.rpg .infos-posteur:nth-of-type(10) .profil_content:after{
+			    content:"• Abus de médicaments \A • Anxiété généralisée (TAG) \A • Dépression \A • Séquelles de la maltraitance d'un animal (otectomie & caudectomie sur un chien)";
+			    font-size:12px;
+			    white-space: pre;
+			    text-wrap: pretty;
+			}
 		}
 		u {
 			text-decoration-color: var(--textColorAccent);
