@@ -246,13 +246,13 @@
 				content: "\f071"!important;
 			}
 
-			.rpg .infos-posteur:nth-of-type(7) .profil_content,
-			.rpg .infos-posteur:nth-of-type(9) .profil_content,
-			.rpg .infos-posteur:nth-of-type(10) .profil_content {
+			.infos-posteur:nth-of-type(7) .profil_content,
+			.infos-posteur:nth-of-type(9) .profil_content,
+			.infos-posteur:nth-of-type(10) .profil_content {
 			    font-size: 0
 			}
 
-			.rpg .infos-posteur:nth-of-type(7) .profil_content:after{
+			.infos-posteur:nth-of-type(7) .profil_content:after{
 			    content:"🔥 Connor Dalma \A 🐕 Félix Sullivan \A 🚨 Jacob Williams";
 			    font-size:12px;
 			    white-space: pre;
@@ -264,14 +264,14 @@
 			    font-weight: bold;
 			}
 			
-			.rpg .infos-posteur:nth-of-type(9) .profil_content:after{
+			.infos-posteur:nth-of-type(9) .profil_content:after{
 			    content:"• Abus et crimes sexuels \A • Deuil et décès d’un parent \A • Procédures médicales en détail (injections & piqûres notamment) \A • Relations avec rapport de force ou de pouvoir";
 			    font-size:12px;
 			    white-space: pre;
 			    text-wrap: pretty;
 			}
 			
-			.rpg .infos-posteur:nth-of-type(10) .profil_content:after{
+			.infos-posteur:nth-of-type(10) .profil_content:after{
 			    content:"• Blessures graves \A • Contexte militaire \A • Deuil familial \A • Guerre et conflits armés \A • PTSD";
 			    font-size:12px;
 			    white-space: pre;
