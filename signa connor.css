@@ -244,11 +244,11 @@ background:url(https://i.imgur.com/EvyKarI.gif);
 			}
 
 			.rpg .infos-posteur:nth-of-type(7) .profil_content:after{
-			    content:"Félix Sullivan \A Jacob Williams \A Rick Addams";
+			    content:"🐕 Félix Sullivan \A 🚨 Jacob Williams \A 🔫 Rick Addams";
 			    font-size:12px;
 			    white-space: pre;
 			    text-wrap: pretty;
-			    background-image: linear-gradient(#E4AD7A 33%, var(--textColor) 33%, var(--textColor) 66%,#7D92C8 66%);
+			    background-image: linear-gradient(#E4AD7A 33%, #8b0000 33%, #8b0000 66%,#7D92C8 66%);
 			    color: transparent;
 			    background-clip: text;
 			    display: inline-block;
