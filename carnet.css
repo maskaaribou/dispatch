@@ -229,8 +229,8 @@ input:checked+.fonglet {
 }
 
 .garderobe .soc-gallery span img {
-    width:300px!important;
-    height:500px!important;
+    max-width:300px!important;
+    max-height:500px!important;
     object-fit:cover;
     border-radius:5px;
     border:10px solid var(--white);
