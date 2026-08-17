@@ -167,13 +167,13 @@ background:url(https://i.imgur.com/YOwERwz.gif);
 				content: "\f787"
 			}
 			.infos-posteur:nth-of-type(7) .profil_content strong:nth-of-type(3):before {
-				content: "\f1b0"
+				content: "\e78f"
 			}
 			.infos-posteur:nth-of-type(7) .profil_content strong:nth-of-type(4):before {
-				content: "\f5e3"
+				content: "\e5bd"
 			}
 			.infos-posteur:nth-of-type(7) .profil_content strong:nth-of-type(5):before {
-				content: "\f0f1"
+				content: "\f21c"
 			}
 			.infos-posteur:nth-of-type(7) .profil_content strong:nth-of-type(6):before {
 				content: "\e0ab"
