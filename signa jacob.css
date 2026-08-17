@@ -268,7 +268,7 @@ background:url(https://i.imgur.com/YOwERwz.gif);
 			}
 			
 			.infos-posteur:nth-of-type(10) .profil_content:after{
-			    content:"• Accidents & blessures \a • Alcoolisme \A • Deuil d'un parent \A • Contexte militaire & policier";
+			    content:"• Accidents & blessures \a • Alcoolisme \A • Contexte militaire & policier \A • Dépression \A • Deuil d'un parent";
 			    font-size:12px;
 			    white-space: pre;
 			    text-wrap: pretty;
