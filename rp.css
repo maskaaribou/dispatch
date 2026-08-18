@@ -24,23 +24,43 @@
 	}
 	.postrp.felix {
 		--color: #e4ad7a;
-		--bg1: #a47a52;
+		--bg1: #8d7661;
 		--bg2: #487aa4;
 	}
 	.postrp.diana {
-		--color: #8696AC
+		--color: #8696AC;
+		--bg1: #2b3e58;
+		--bg2: #739acc;
 	}
 	.postrp.rick {
-		--color: #7D92C8
+		--color: #7dadc8;
+		--bg1: #553c3c;
+		--bg2: #4c6e84;
 	}
 	.postrp.ronnie {
-		--color: #be3533
+		--color: #be3533;
+		--bg1: #5c2929;
+		--bg2: #163047;
 	}
 	.postrp.connor {
-		--color: #DF2E42
+		--color: #DF2E42;
+		--bg1: #e4764c;
+		--bg2: #716a63;
 	}
 	.postrp.emery {
-		--color: #A789BE
+		--color: #A789BE;
+		--bg1: #472c5c;
+		--bg2: #aba6c6;
+	}
+	.postrp.jacob {
+		--color: #76474E;
+		--bg1: #251e1f;
+		--bg2: #999999;
+	}
+	.postrp.maria {
+		--color: #68172A;
+		--bg1: #443035;
+		--bg2: #ad8992;
 	}
 	.postrp:after {
 		content: "maskaaribou";
