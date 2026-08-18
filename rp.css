@@ -1,5 +1,14 @@
 @import url("https://kit-pro.fontawesome.com/releases/v7.2.0/css/pro.min.css");
-.post.post_row:has(.signafelix), #preview:has(.signafelix), .post.post_row:has(.signarick), #preview:has(.signarick), .post.post_row:has(.signaconnor), #preview:has(.signaconnor), .post.post_row:has(.signajacob), #preview:has(.signajacob), .post.post_row:has(.signamina), #preview:has(.signamina) {
+.post.post_row:has(.signafelix),
+#preview:has(.signafelix),
+.post.post_row:has(.signarick),
+#preview:has(.signarick),
+.post.post_row:has(.signaconnor),
+#preview:has(.signaconnor),
+.post.post_row:has(.signajacob),
+#preview:has(.signajacob),
+.post.post_row:has(.signamina),
+#preview:has(.signamina) {
 	.postrp {
 		display: flex;
 		flex-direction: column;
@@ -48,10 +57,12 @@
 		margin: 15px 0 0;
 		border-top: 2px solid var(--color);
 	}
-	.postrp u, .postrp strike {
+	.postrp u,
+	.postrp strike {
 		text-decoration-color: var(--color)
 	}
-	.postrp u, .postrp strike {
+	.postrp u,
+	.postrp strike {
 		text-decoration-thickness: 2px
 	}
 	.postrp::selection {
@@ -112,7 +123,8 @@
 		z-index: 2;
 		text-shadow: var(--white) 2px 2px 0;
 	}
-	.postrp t ti bold, .postrp t ti strong {
+	.postrp t ti bold,
+	.postrp t ti strong {
 		color: var(--color)
 	}
 	.postrp t st {
@@ -175,18 +187,55 @@
 		font-weight: 500;
 		background: var(--white);
 	}
-	.postrp rp f, .postrp rp d, .postrp rp r, .postrp rp v, .postrp rp c, .postrp rp e, .postrp rp j, .postrp rp m, .postrp rp ava, .postrp rp norah, .postrp rp pnj {
+	.postrp rp f,
+	.postrp rp d,
+	.postrp rp r,
+	.postrp rp v,
+	.postrp rp c,
+	.postrp rp e,
+	.postrp rp j,
+	.postrp rp m,
+	.postrp rp ava,
+	.postrp rp norah,
+	.postrp rp pnj {
 		font-weight: 900;
 		letter-spacing: .55px;
 		display: inline;
 	}
-	.postrp rp f:before, .postrp rp d:before, .postrp rp r:before, .postrp rp v:before, .postrp rp c:before, .postrp rp e:before, .postrp rp j:before, .postrp rp m:before, .postrp rp ava:before, .postrp rp norah:before, .postrp rp pnj:before {
+	.postrp rp f:before,
+	.postrp rp d:before,
+	.postrp rp r:before,
+	.postrp rp v:before,
+	.postrp rp c:before,
+	.postrp rp e:before,
+	.postrp rp j:before,
+	.postrp rp m:before,
+	.postrp rp ava:before,
+	.postrp rp norah:before,
+	.postrp rp pnj:before {
 		content: "« "
 	}
-	.postrp rp f:after, .postrp rp d:after, .postrp rp r:after, .postrp rp v:after, .postrp rp c:after, .postrp rp e:after, .postrp rp j:after, .postrp rp m:after, .postrp rp ava:after, .postrp rp norah:after, .postrp rp pnj:after {
+	.postrp rp f:after,
+	.postrp rp d:after,
+	.postrp rp r:after,
+	.postrp rp v:after,
+	.postrp rp c:after,
+	.postrp rp e:after,
+	.postrp rp j:after,
+	.postrp rp m:after,
+	.postrp rp ava:after,
+	.postrp rp norah:after,
+	.postrp rp pnj:after {
 		content: " »"
 	}
-	.postrp rp f, .postrp rp d, .postrp rp r, .postrp rp v, .postrp rp c, .postrp rp e, .postrp rp j, .postrp rp m {
+	.postrp rp f,
+	.postrp rp d,
+	.postrp rp r,
+	.postrp rp v,
+	.postrp rp c,
+	.postrp rp e,
+	.postrp rp j,
+	.postrp rp m {
 		color: var(--color)
 	}
 	.postrp rp pnj {
@@ -212,7 +261,11 @@
 		text-transform: uppercase;
 		letter-spacing: .55px;
 	}
-	.postrp bt of, .postrp bt wn, .postrp bt wr, .postrp bt ft, .postrp bt hrp {
+	.postrp bt of,
+	.postrp bt wn,
+	.postrp bt wr,
+	.postrp bt ft,
+	.postrp bt hrp {
 		background: var(--white);
 		border-radius: 10px;
 		font-size: 10px;
@@ -224,7 +277,10 @@
 		padding: 15px 10px 13px;
 		color: var(--textColor);
 	}
-	.postrp bt of:before, .postrp bt wn:before, .postrp bt wr:before, .postrp bt ft:before {
+	.postrp bt of:before,
+	.postrp bt wn:before,
+	.postrp bt wr:before,
+	.postrp bt ft:before {
 		font-family: "Font Awesome 7 Pro";
 		margin: -4px 5px 0 0;
 		font-feature-settings: normal;
@@ -271,13 +327,23 @@
 	.postrp bt .mentiontag {
 		color: var(--bg2);
 	}
-	.postrp bt a:hover, .mentiontag:hover {
+	.postrp bt a:hover,
+	.mentiontag:hover {
 		color: var(--color)!important;
 	}
 }
 
 [data-color-scheme="dark"] {
-	.post.post_row:has(.signafelix), #preview:has(.signafelix), .post.post_row:has(.signarick), #preview:has(.signarick), .post.post_row:has(.signaconnor), #preview:has(.signaconnor), .post.post_row:has(.signajacob), #preview:has(.signajacob), .post.post_row:has(.signamina), #preview:has(.signamina) {
+	.post.post_row:has(.signafelix),
+	#preview:has(.signafelix),
+	.post.post_row:has(.signarick),
+	#preview:has(.signarick),
+	.post.post_row:has(.signaconnor),
+	#preview:has(.signaconnor),
+	.post.post_row:has(.signajacob),
+	#preview:has(.signajacob),
+	.post.post_row:has(.signamina),
+	#preview:has(.signamina) {
 		.postrp {
 			--grad: linear-gradient(to right, var(--bg1), #d1b5af, var(--bg2));
 			bt a {
@@ -286,7 +352,8 @@
 			.mentiontag {
 				color: var(--bg1)!important;
 			}
-			bt a:hover, .mentiontag:hover {
+			bt a:hover,
+			.mentiontag:hover {
 				color: var(--color)!important;
 			}
 		}
