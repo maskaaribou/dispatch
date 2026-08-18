@@ -1,6 +1,7 @@
 @import url("https://kit-pro.fontawesome.com/releases/v7.2.0/css/pro.min.css");
 
 .post.post_row:has(.signamina) {
+	.signature_div {display: none}
 	.post_profile {
 		.rpg,
 		.profil {
