@@ -58,9 +58,9 @@
 		--bg2: #999999;
 	}
 	.postrp.maria {
-		--color: #68172A;
-		--bg1: #443035;
-		--bg2: #ad8992;
+		--color: #681e17;
+        --bg1: #443330;
+        --bg2: #ad9189;
 	}
 	.postrp:after {
 		content: "maskaaribou";
