@@ -20,7 +20,7 @@
 		border-radius: 10px;
 		text-wrap: pretty;
 		max-width: 650px;
-		--grad: linear-gradient(to left, var(--bg1), #d1b5af, var(--bg2));
+		--grad: linear-gradient(to left, var(--bg1), var(--color), var(--bg2));
 	}
 	.postrp.felix {
 		--color: #e4ad7a;
@@ -345,12 +345,12 @@
 	.post.post_row:has(.signamina),
 	#preview:has(.signamina) {
 		.postrp {
-			--grad: linear-gradient(to right, var(--bg1), #d1b5af, var(--bg2));
+			--grad: linear-gradient(to right, var(--bg1), var(--color), var(--bg2));
 			bt a {
-				color: var(--bg2)!important;
+				color: var(--bg1)!important;
 			}
 			.mentiontag {
-				color: var(--bg1)!important;
+				color: var(--bg2)!important;
 			}
 			bt a:hover,
 			.mentiontag:hover {
