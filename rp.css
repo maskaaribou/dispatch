@@ -347,10 +347,10 @@
 		.postrp {
 			--grad: linear-gradient(to right, var(--bg1), var(--color), var(--bg2));
 			bt a {
-				color: var(--bg1)!important;
+				color: var(--bg2)!important;
 			}
 			.mentiontag {
-				color: var(--bg2)!important;
+				color: var(--bg1)!important;
 			}
 			bt a:hover,
 			.mentiontag:hover {
