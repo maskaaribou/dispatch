@@ -23,14 +23,14 @@
 		--grad: linear-gradient(to left, var(--bg1), var(--color), var(--bg2));
 	}
 	.postrp.felix {
-		--color: #e4ad7a;
-		--bg1: #8d7661;
-		--bg2: #487aa4;
+		--color: #e2b98a;
+		--bg1: #a4847f;
+		--bg2: #b4c5d3;
 	}
 	.postrp.diana {
-		--color: #8696AC;
-		--bg1: #2b3e58;
-		--bg2: #739acc;
+		--color: #74a4cc;
+		--bg1: #094169;
+		--bg2: #ebbd72;
 	}
 	.postrp.rick {
 		--color: #7dadc8;
@@ -38,9 +38,9 @@
 		--bg2: #4c6e84;
 	}
 	.postrp.ronnie {
-		--color: #be3533;
-		--bg1: #5c2929;
-		--bg2: #163047;
+		--color: #c25755;
+        --bg1: #5e2929;
+        --bg2: #23415c;
 	}
 	.postrp.connor {
 		--color: #DF2E42;
@@ -48,9 +48,9 @@
 		--bg2: #716a63;
 	}
 	.postrp.emery {
-		--color: #A789BE;
+		--color: #a788af;
 		--bg1: #472c5c;
-		--bg2: #aba6c6;
+		--bg2: #eed3b6;
 	}
 	.postrp.jacob {
 		--color: #76474E;
@@ -58,9 +58,9 @@
 		--bg2: #999999;
 	}
 	.postrp.maria {
-		--color: #681e17;
-        --bg1: #443330;
-        --bg2: #ad9189;
+		--color: #d38275;
+        --bg1: #e0925d;
+        --bg2: #f1d2b5;
 	}
 	.postrp:after {
 		content: "maskaaribou";
@@ -345,7 +345,7 @@
 		transition: 300ms all
 	}
 	.postrp bt .mentiontag {
-		color: var(--bg2);
+		color: var(--bg1);
 	}
 	.postrp bt a:hover,
 	.mentiontag:hover {
@@ -366,11 +366,8 @@
 	#preview:has(.signamina) {
 		.postrp {
 			--grad: linear-gradient(to right, var(--bg1), var(--color), var(--bg2));
-			bt a {
+			bt a,.mentiontag {
 				color: var(--bg2)!important;
-			}
-			.mentiontag {
-				color: var(--bg1)!important;
 			}
 			bt a:hover,
 			.mentiontag:hover {
