@@ -23,8 +23,8 @@
 		--grad: linear-gradient(to left, var(--bg1), var(--color), var(--bg2));
 	}
 	.postrp.felix {
-		--color: #e2b98a;
-		--bg1: #a4847f;
+		--color: #e8be9a;
+		--bg1: #b3937f;
 		--bg2: #b4c5d3;
 	}
 	.postrp.diana {
