@@ -215,6 +215,9 @@
 	.postrp rp e,
 	.postrp rp j,
 	.postrp rp m,
+	.postrp rp ct,
+	.postrp rp jt,
+	.postrp rp mt,
 	.postrp rp ava,
 	.postrp rp norah,
 	.postrp rp pnj {
@@ -230,6 +233,9 @@
 	.postrp rp e:before,
 	.postrp rp j:before,
 	.postrp rp m:before,
+	.postrp rp ct:before,
+	.postrp rp jt:before,
+	.postrp rp mt:before,
 	.postrp rp ava:before,
 	.postrp rp norah:before,
 	.postrp rp pnj:before {
@@ -243,6 +249,9 @@
 	.postrp rp e:after,
 	.postrp rp j:after,
 	.postrp rp m:after,
+	.postrp rp ct:after,
+	.postrp rp jt:after,
+	.postrp rp mt:after,
 	.postrp rp ava:after,
 	.postrp rp norah:after,
 	.postrp rp pnj:after {
@@ -255,11 +264,16 @@
 	.postrp rp c,
 	.postrp rp e,
 	.postrp rp j,
-	.postrp rp m {
+	.postrp rp m,
+	.postrp rp ct,
+	.postrp rp jt,
+	.postrp rp mt, {
 		color: var(--color)
 	}
-	.postrp rp pnj {
-		color: var(--textColorAccent)
+	.postrp rp ct,
+	.postrp rp jt,
+	.postrp rp mt {
+		font-size:
 	}
 	.postrp rp ava {
 		color: #da91c8
@@ -350,6 +364,62 @@
 	.postrp bt a:hover,
 	.mentiontag:hover {
 		color: var(--color)!important;
+	}
+	.postrp t[data-trad] {
+	    display: inline-block;
+	    flex-direction: unset;
+	    background: none;
+	    border-bottom: none;
+	    color: inherit;
+	    padding: 0;
+	    text-align: unset;
+	    border-radius: 0;
+	    position: relative;
+	    height: unset;
+	    justify-content: unset;
+	    text-decoration: underline;
+	    text-decoration-style: dotted;
+	    font-style: italic;
+	}
+	
+	.postrp t[data-trad]::after {
+	    content: attr(data-trad);
+	    position: absolute;
+	    bottom: calc(100% + 6px);
+	    left: 50%;
+	    transform: translate(-50%, 3px);
+	    background: var(--color);
+	    color: white;
+	    padding: 2px 7px;
+	    border-radius: 7px;
+	    white-space: nowrap;
+	    z-index: 9999;
+	    font-style: normal;
+	    text-decoration: none;
+	    opacity: 0;
+	    transition: opacity 200ms ease, transform 200ms ease;
+	    pointer-events: none;
+	}
+	
+	.postrp t[data-trad]::before {
+	    content: "";
+	    position: absolute;
+	    bottom: calc(100% + 1px);
+	    left: 50%;
+	    transform: translate(-50%, 3px);
+	    border-left: 6px solid transparent;
+	    border-right: 6px solid transparent;
+	    border-top: 6px solid var(--color);
+	    z-index: 10000;
+	    opacity: 0;
+	    transition: opacity 200ms ease, transform 200ms ease;
+	    pointer-events: none;
+	}
+	
+	.postrp t[data-trad]:hover::after,
+	.postrp t[data-trad]:hover::before {
+	    opacity: 1;
+	    transform: translate(-50%, 0);
 	}
 }
 
