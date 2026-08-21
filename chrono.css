@@ -150,7 +150,7 @@ h ln {
 }
 
 .filter-buttons input:checked+label {
-    background-color: var(--contrast);
+    background-color: var(--textColor);
     color: var(--white);
 }
 
