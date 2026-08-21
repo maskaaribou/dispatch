@@ -310,7 +310,8 @@ input:checked+.fonglet {
 .playlist:has(input[id=songc]:checked) label[for=songc],
 .playlist:has(input[id=songd]:checked) label[for=songd],
 .playlist:has(input[id=songe]:checked) label[for=songe],
-.playlist label:hover{
+
+label:hover{
     background-color: var(--textColor);
 }
 
