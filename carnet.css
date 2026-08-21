@@ -273,3 +273,46 @@ input:checked+.fonglet {
     color: var(--white);
 }
 
+.playlist {
+    display: flex;
+    flex-wrap: nowrap;
+    gap:10px;
+}
+
+.playlist .nav-tabs {
+    flex-direction: column;
+    width:200px;
+    padding: 0;
+    margin: 0;
+}
+
+.playlist .fonglet {
+    flex:1;
+    padding: 0 0 10px;
+}
+
+.playlist iframe {
+    width:100%;
+}
+
+.playlist .nav-tabs label {
+    line-height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.playlist .nav-tabs labo2 {
+    font-size:15px;
+}
+
+.playlist:has(input[id=songa]:checked) label[for=songa],
+.playlist:has(input[id=songb]:checked) label[for=songb],
+.playlist:has(input[id=songc]:checked) label[for=songc],
+.playlist:has(input[id=songd]:checked) label[for=songd],
+.playlist:has(input[id=songe]:checked) label[for=songe],
+.playlist label:hover{
+    background-color: var(--textColor);
+}
+
+
+
