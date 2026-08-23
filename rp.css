@@ -373,7 +373,7 @@
 	    left: 50%;
 	    transform: translate(-50%, 3px);
 	    background: var(--textColor);
-	    color: inherit;
+	    color: var(--white);
 	    padding: 2px 7px;
 	    border-radius: 7px;
 	    white-space: nowrap;
