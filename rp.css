@@ -363,6 +363,7 @@
 	    text-decoration: underline;
 	    text-decoration-style: dotted;
 	    font-style: italic;
+		cursor:help
 	}
 	
 	.postrp t[data-trad]::after {
