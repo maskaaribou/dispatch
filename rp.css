@@ -372,8 +372,8 @@
 	    bottom: calc(100% + 6px);
 	    left: 50%;
 	    transform: translate(-50%, 3px);
-	    background: var(--color);
-	    color: var(--textColor);
+	    background: var(--textColor);
+	    color: inherit;
 	    padding: 2px 7px;
 	    border-radius: 7px;
 	    white-space: nowrap;
@@ -393,7 +393,7 @@
 	    transform: translate(-50%, 3px);
 	    border-left: 6px solid transparent;
 	    border-right: 6px solid transparent;
-	    border-top: 6px solid var(--color);
+	    border-top: 6px solid var(--textColor);
 	    z-index: 10000;
 	    opacity: 0;
 	    transition: opacity 200ms ease, transform 200ms ease;
