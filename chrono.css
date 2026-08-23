@@ -17,6 +17,7 @@ align-items: flex-start;
 .chrono lst {
   display: flex;
   flex-direction: column-reverse;
+  width: 100%;
 }
 
 h {
