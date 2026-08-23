@@ -154,6 +154,19 @@ h ln {
     color: var(--white);
 }
 
+.mina .filter-buttons label i {display: inline;}
+
+.chrono flab {
+    position: sticky;
+    top:-10px;
+    z-index: 1
+}
+
+.mina h ln {
+    top:1px;
+    height: calc(100% - 2px);
+}
+
 .ffond:has(input[id="croissant"]:checked) + h .chrono lst,
 .ffond:has(input[id="croissant2"]:checked) + h .chrono lst {flex-direction: column}
 .ffond:has(input[id="tout"]:checked) + h .chrono x,
