@@ -117,7 +117,7 @@ input:checked+.fonglet {
 .likedislike t {
     display: flex;
     gap:10px;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     font-weight: 700;
     color: var(--contrast);
@@ -127,12 +127,24 @@ input:checked+.fonglet {
 }
 
 .likedislike t img {
-    width: 80px;
-    height:80px;
+    width: 130px;
+    height:130px;
     border-radius: 50%;
     outline: 2px solid var(--contrast);
     border: 2px solid var(--white);
     object-fit: cover;
+}
+
+.likedislike span {
+    color: var(--textColorAccent);
+    text-align: center;
+    line-height: 100%;
+    font-size:30px;
+}
+
+.likedislike span strong {
+    display: block;
+    color: var(--contrast);
 }
 
 .likedislike t img:last-of-type {
