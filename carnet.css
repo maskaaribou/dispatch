@@ -277,13 +277,17 @@ input:checked+.fonglet {
     display: flex;
     flex-wrap: nowrap;
     gap:10px;
+    height:716px;
+    flex-direction: column-reverse;
 }
 
 .playlist .nav-tabs {
     flex-direction: column;
-    width:200px;
+    width:100%;
     padding: 0;
     margin: 0;
+    max-height: 160px;
+    overflow: auto;
 }
 
 .playlist .fonglet {
@@ -293,17 +297,32 @@ input:checked+.fonglet {
 
 .playlist iframe {
     width:100%;
+    height:unset;
+    flex:1
 }
 
 .playlist .nav-tabs label {
     line-height: 100%;
     display: flex;
     justify-content: center;
+    flex-direction: row;
+    gap:10px;
+}
+
+.playlist .nav-tabs labo2,
+.playlist .nav-tabs labo{
+    font-size:15px;
+    flex:1;
 }
 
 .playlist .nav-tabs labo2 {
-    font-size:15px;
+    text-align: right;
 }
+
+.playlist .nav-tabs labo {
+    text-align: left;
+}
+
 
 .playlist:has(input[id=songa]:checked) label[for=songa],
 .playlist:has(input[id=songb]:checked) label[for=songb],
