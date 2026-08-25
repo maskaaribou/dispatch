@@ -5,11 +5,14 @@
     font-size:13px;
     text-wrap:pretty;
     filter: blur(5px);
-    transition: 300ms all 
+    max-height:726px;
+    overflow: hidden;
+    transition: 300ms all;
 }
 
 .ffond:has(#medical-access:checked) ~ .medical {
   filter: none;
+    max-height: unset;
 }
 
 .medical x {
