@@ -36,6 +36,16 @@ width:100%;
   margin-bottom: -10px;
 }
 
+.pnj .fonglet {
+    height: 554px;
+}
+
+.fonglet .fbloc2 .r,
+.fonglet .fbloc2 .r .infos,
+.fonglet .fbloc2 img{
+    height:543px;
+}
+
 input:checked+.fonglet {
   display: flex;
   flex-direction: column
