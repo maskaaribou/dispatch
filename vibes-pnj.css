@@ -1,0 +1,62 @@
+.post:has(#pnj) .signature_div {display: none;}
+
+#pnj {
+	.ftit,
+	.ffond {
+		width: 625px;
+	}
+	.nav-tabs.fiche {
+		width: 100%;
+		position: relative;
+		font-size: 12px;
+		margin: 0 0 10px;
+	}
+	.nav-tabs.fiche label {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.nav-tabs.fiche label img {
+		width: 100%;
+		height: 100px;
+		object-fit: cover;
+		display: block;
+	}
+	.ffond:has(input[id=liena]:checked) label[for=liena],
+	.ffond:has(input[id=lienb]:checked) label[for=lienb],
+	.ffond:has(input[id=lienc]:checked) label[for=lienc],
+	.ffond:has(input[id=liend]:checked) label[for=liend],
+	.ffond:has(input[id=liene]:checked) label[for=liene] {
+		background-color: var(--textColor);
+		color: var(--white);
+	}
+	.ongletr,
+	.fonglet {
+		display: none;
+		margin-bottom: -10px;
+		height: 554px;
+	}
+	input:checked+.fonglet {
+		display: flex;
+		flex-direction: column;
+	}
+	.fonglet .fbloc2 {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: nowrap;
+		padding: 0 0 10px;
+		gap: 10px;
+	}
+	.fonglet .fbloc2 .r .infos {
+		overflow: auto;
+		padding: 0 10px 0 0;
+		flex: 1;
+		height: 100%;
+	}
+	.r {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		height: 543px;
+	}
+}
