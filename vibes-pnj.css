@@ -26,7 +26,8 @@
 	.ffond:has(input[id=lienb]:checked) label[for=lienb],
 	.ffond:has(input[id=lienc]:checked) label[for=lienc],
 	.ffond:has(input[id=liend]:checked) label[for=liend],
-	.ffond:has(input[id=liene]:checked) label[for=liene] {
+	.ffond:has(input[id=liene]:checked) label[for=liene],
+	label:hover {
 		background-color: var(--textColor);
 		color: var(--white);
 	}
