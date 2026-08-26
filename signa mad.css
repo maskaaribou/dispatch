@@ -400,6 +400,9 @@
 		/* AVA */&:nth-of-type(4):before {content: "\e78f";}
 		/* OEIL */&:nth-of-type(5):before {content: "\f06e";}
 		/* ARMÉE */&:nth-of-type(6):before {content: "\e54e";}
+		/* ARMÉE */&:nth-of-type(7):before {content: "\e0ab";}
+		/* ARMÉE */&:nth-of-type(8):before {content: "\f559";}
+		/* ARMÉE */&:nth-of-type(9):before {content: "\f5a2";}
 	}
     .rpg {
         .infos-posteur:nth-of-type(7) .profil_content:after {
