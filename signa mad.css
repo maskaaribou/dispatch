@@ -60,6 +60,10 @@
 		background-clip: text;
 		color: transparent;
 	}
+	.quote strike {
+	    text-decoration: line-through wavy 2px;
+	    margin: 0 0 0 6px;
+	}
 	&:after {
 		content: "maskaaribou";
 		display: block;
