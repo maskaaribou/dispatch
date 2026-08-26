@@ -1,0 +1,65 @@
+.post:has(#playlist) .signature_div {display: none;}
+
+#playlist {
+	.ftit,
+	.ffond {
+		margin: auto;
+		width: 100%;
+	}
+	.ffond {
+		display: flex;
+		flex-wrap: nowrap;
+		gap: 10px;
+		height: 716px;
+		flex-direction: column-reverse;
+	}
+	.nav-tabs {
+		flex-direction: column;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		position: relative;
+		font-size: 12px;
+	}
+	:has(input[id=songa]:checked) label[for=songa],
+	.playlist:has(input[id=songb]:checked) label[for=songb],
+	.playlist:has(input[id=songc]:checked) label[for=songc],
+	.playlist:has(input[id=songd]:checked) label[for=songd],
+	.playlist:has(input[id=songe]:checked) label[for=songe],
+	label:hover {
+		background-color: var(--textColor) !important;
+	}
+	.nav-tabs label {
+		line-height: 100%;
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+		gap: 10px;
+	}
+	.nav-tabs labo2,
+	.nav-tabs labo {
+		font-size: 15px;
+		flex: 1;
+		text-align: left;
+	}
+	.nav-tabs labo2 {
+		text-align: right;
+	}
+	.ongletr,
+	.fonglet {
+		display: none;
+	}
+	.fonglet {
+		flex: 1;
+		padding: 0;
+	}
+	input:checked+.fonglet {
+		display: flex;
+		flex-direction: column;
+	}
+	iframe {
+		width: 100%;
+		height: unset;
+		flex: 1;
+	}
+}
