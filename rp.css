@@ -1,12 +1,6 @@
 @import url("https://kit-pro.fontawesome.com/releases/v7.2.0/css/pro.min.css");
-.post.post_row:has(.signafelix),
-#preview:has(.signafelix),
-.post.post_row:has(.signarick),
-#preview:has(.signarick),
-.post.post_row:has(.signaconnor),
-#preview:has(.signaconnor),
-.post.post_row:has(.signajacob),
-#preview:has(.signajacob),
+.post.post_row:has(.signamad),
+#preview:has(.signamad),
 .post.post_row:has(.signamina),
 #preview:has(.signamina) {
 	.postrp {
