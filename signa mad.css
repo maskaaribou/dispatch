@@ -130,4 +130,315 @@
 			content: "The uniform can come off. Being their father never does.";
 		}
 	}
+
+
+
+
+
+
+	.post:has(.signamad) .post_userinfo {
+	hr {
+		border-top: 2px solid var(--textColorAccent);
+		margin: 5px 0 -7px !important;
+	}
+	a {
+		font-weight: bold!important;
+	}
+	u {
+		text-decoration-color: var(--textColorAccent);
+		text-decoration-thickness: 2px;
+	}
+	.profil {
+		text-wrap: pretty;
+		text-align: justify;
+		display: flex;
+		flex-direction: column;
+		.infos-posteur {
+			.profil_label .label {
+				display: block;
+			}
+			.profil_content {
+				img {
+					width: 185px;
+					height: 110px;
+					object-fit: cover;
+				}
+				strong {
+					color: var(--contrast);
+					font-family: var(--font2);
+					font-weight: 500;
+					text-transform: uppercase;
+					&:before {
+						font-family: "Font Awesome 7 Pro";
+						font-weight: 400 !important;
+						margin-right: 5px;
+					}
+				}
+				&:has(img)+.profil_separator {
+					display: none;
+				}
+			}
+			&:has(a) {
+				border-top: 2px solid var(--textColorAccent);
+				padding-top: 10px;
+				margin: -10px 0 3px !important;
+			}
+			&:not(:first-of-type) {
+				margin-bottom: 5px;
+			}
+			i {
+				display: inline-block;
+				margin-bottom: 5px;
+				&:has(+ br + i) {
+					margin-bottom: 0;
+				}
+			}
+			&:has(u) {
+				border-top: 2px solid var(--textColorAccent);
+				padding-top: 10px;
+				margin: -10px 0 0 !important;
+				order: 1;
+				display: block;
+			}
+			.profil_label .label:before {
+				font-family: "Font Awesome 7 Pro";
+				font-weight: 400 !important;
+				margin-right: 5px;
+			}
+			&:nth-of-type(8) .profil_label {
+				display: none;
+			}
+		}
+		/* AGE */
+		.infos-posteur:nth-of-type(1):has(img)+.infos-posteur:nth-of-type(2) .profil_label .label:before,
+		.infos-posteur:nth-of-type(1):not(:has(img)) .profil_label .label:before {
+			content: "\f1fd";
+		}
+		/* MÉTIER */
+		.infos-posteur:nth-of-type(1):has(img)~.infos-posteur:nth-of-type(3) .profil_label .label:before,
+		.infos-posteur:nth-of-type(1):not(:has(img))+.infos-posteur:nth-of-type(2) .profil_label .label:before {
+			content: "\f0b1";
+		}
+		/* SITUATION */
+		.infos-posteur:nth-of-type(4) .profil_label .label:before {
+			content: "\f81b";
+		}
+		/* QUARTIER */
+		.infos-posteur:nth-of-type(5) .profil_label .label:before {
+			content: "\e1b1";
+		}
+		/* PRONOMS */
+		.infos-posteur:nth-of-type(6) .profil_label .label:before {
+			content: "\f228";
+		}
+		/* BLOC LIBRE */
+		.infos-posteur:nth-of-type(7) .profil_content strong {
+			a {
+				font-weight: 100!important
+			}
+			/* PHONE */
+			&:nth-of-type(1):before {
+				content: "\f2a0";
+			}
+			/* INSTA */
+			&:nth-of-type(2):before {
+				content: "\f16d";
+				font-family: "Font Awesome 7 Brands";
+				margin: 0 6px 0 2px;
+			}
+			/* BUNNYLOVE */
+			&:nth-of-type(3):before {
+				content: "\f787";
+			}
+		}
+		/* RPs */
+		.infos-posteur:nth-of-type(8) {
+			.profil_content strong:nth-of-type(1):before {
+				content: "\e212";
+			}
+			i {
+				display: inline-block;
+				margin: 0 0 0px;
+			}
+			a {
+				display: inline-block;
+				max-width: 100%;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+				overflow: hidden;
+				margin: 0 0 -5px;
+				line-height: 100%;
+				text-transform: uppercase;
+				font-size: 10px;
+			}
+			a:hover {
+				text-overflow: unset;
+				white-space: wrap;
+			}
+		}
+	}
+    .rpg {
+        text-wrap: pretty;
+        text-align: justify;
+        display: flex;
+        flex-direction: column;
+        .infos-posteur .profil_label .label:before,
+        .profil_content strong:before {
+            font-family: "Font Awesome 7 Pro";
+            font-weight: 400!important;
+            margin: 0 5px 0 0;
+        }
+        .profil_label .label {
+            display: block;
+        }
+        strong {
+            display: inline-block;
+            margin: 10px 0 0;
+            color: var(--contrast);
+					font-family: var(--font2);
+					font-weight: 500;
+					text-transform: uppercase;
+        }
+        .infos-posteur:not(:first-of-type) .profil_label .label {
+            margin: 5px 0 0;
+        }
+        /* INSCRIPTION */
+        .infos-posteur:nth-of-type(1) .profil_label .label:before {
+            content: "\f007"!important;
+        }
+        /* MESSAGES */
+        .infos-posteur:nth-of-type(2) .profil_label .label:before {
+            content: "\e1de"!important;
+        }
+        /* PRONOMS */
+        .infos-posteur:nth-of-type(3):has(~ .infos-posteur:nth-of-type(5)) .profil_label .label::before {
+            content: "\e14f" !important;
+        }
+        /* KARMA */
+        .infos-posteur:nth-of-type(4) .profil_label .label:before {
+            content: "\f6ad"!important;
+            font-weight: 600!important
+        }
+        /* AVATAR */
+        .infos-posteur:nth-of-type(5) .profil_label .label:before {
+            content: "\e1b9"!important;
+        }
+        /* CRÉDITS */
+        .infos-posteur:nth-of-type(6) .profil_label .label:before {
+            content: "\f25c"!important;
+        }
+        /* IA */
+        .infos-posteur:nth-of-type(6) strong:before {
+            content: "\e33b"!important;
+        }
+        /* COMPTES */
+        .infos-posteur:nth-of-type(7) .profil_label .label:before {
+            content: "\f5fd"!important;
+        }
+        /* DISPO */
+        .infos-posteur:nth-of-type(8) .profil_label .label:before {
+            content: "\f133"!important;
+        }
+        /* TRIGGER */
+        .infos-posteur:nth-of-type(9) .profil_label .label:before {
+            content: "\f05e"!important;
+        }
+        /* WARNING */
+        .infos-posteur:nth-of-type(10) .profil_label .label:before {
+            content: "\f071"!important;
+        }
+        .infos-posteur:nth-of-type(7) .profil_content,
+		.infos-posteur:nth-of-type(9) .profil_content,
+		.infos-posteur:nth-of-type(10) .profil_content {
+			font-size: 0
+		}
+        .infos-posteur:nth-of-type(7) .profil_content:after {
+            font-size: 12px;
+            white-space: pre;
+            color: transparent;
+            background-clip: text;
+            display: inline-block;
+            font-weight: bold;
+        }
+        .infos-posteur:nth-of-type(9) .profil_content:after {
+            content: "• Abus et crimes sexuels \A • Deuil et décès d’un parent \A • Procédures médicales en détail (injections & piqûres notamment) \A • Relations avec rapport de force ou de pouvoir";
+            font-size: 12px;
+            white-space: pre;
+            text-wrap: pretty;
+        }
+        .infos-posteur:nth-of-type(10) .profil_content:after {
+            font-size: 12px;
+            white-space: pre;
+            text-wrap: pretty;
+        }
+    }
+}
+
+.post:has(.signamad.felix) {
+	.profil .infos-posteur:nth-of-type(7) .profil_content strong {
+		/* DOGS */&:nth-of-type(4):before {content: "\f1b0";}
+		/* HAND */&:nth-of-type(5):before {content: "\f259";}
+		/* BUREAU */&:nth-of-type(6):before {content: "\e87e";}
+	}
+    .rpg {
+        .infos-posteur:nth-of-type(7) .profil_content:after {
+            content: "🔥 Connor Dalma \A 🚨 Jacob Williams \A 🔫 Rick Addams";
+            background-image: linear-gradient(#DF2E42 33%, #76474E 33%, #76474E 66%, #7dadc8 66%);
+        }
+        .infos-posteur:nth-of-type(10) .profil_content:after {
+            content: "• Abus de médicaments \A • Anxiété généralisée (TAG) \A • Dépression \A • Séquelles de la maltraitance d'un animal (otectomie & caudectomie sur un chien)";
+        }
+    }
+}
+
+.post:has(.signamad.rick) {
+	.profil .infos-posteur:nth-of-type(7) .profil_content strong {
+		/* AVA */&:nth-of-type(4):before {content: "\e78f";}
+		/* OEIL */&:nth-of-type(5):before {content: "\f06e";}
+		/* ARMÉE */&:nth-of-type(6):before {content: "\e54e";}
+	}
+    .rpg {
+        .infos-posteur:nth-of-type(7) .profil_content:after {
+            content: "🔥 Connor Dalma \A 🐕 Félix Sullivan \A 🚨 Jacob Williams";
+            background-image: linear-gradient(#DF2E42 33%, #E4AD7A 33%, #E4AD7A 66%,#76474E 66%)
+        }
+        .infos-posteur:nth-of-type(10) .profil_content:after {
+            content: "• Blessures graves \A • Contexte militaire \A • Deuil familial \A • Guerre et conflits armés \A • PTSD";
+        }
+    }
+}
+
+.post:has(.signamad.connor) {
+	.profil .infos-posteur:nth-of-type(7) .profil_content strong {
+		/* DOGS */&:nth-of-type(4):before {content: "\f1b0";}
+		/* VOITURE */&:nth-of-type(5):before {content: "\f5e3";}
+		/* ANALGÉSIE */&:nth-of-type(6):before {content: "\f0f1";}
+	}
+    .rpg {
+        .infos-posteur:nth-of-type(7) .profil_content:after {
+            content: "🐕 Félix Sullivan \A 🚨 Jacob Williams \A 🔫 Rick Addams";
+            background-image: linear-gradient(#E4AD7A 33%, #76474E 33%, #76474E 66%,#7dadc8 66%);
+        }
+        .infos-posteur:nth-of-type(10) .profil_content:after {
+            content: "• Accidents & blessures \A • Conflits familiaux \A • Incendies \A • Peine de prison";
+        }
+    }
+}
+
+.post:has(.signamad.jacob) {
+	.profil .infos-posteur:nth-of-type(7) .profil_content strong {
+		/* FAM */&:nth-of-type(4):before {content: "\e78f";}
+		/* ALCOOL */&:nth-of-type(5):before {content: "\f79f";}
+		/* BIKER */&:nth-of-type(6):before {content: "\f21c";}
+	}
+    .rpg {
+        .infos-posteur:nth-of-type(7) .profil_content:after {
+            content: "🔥 Connor Dalma \A 🐕 Félix Sullivan \A 🔫 Rick Addams";
+            background-image: linear-gradient(#DF2E42 33%, #E4AD7A 33%, #E4AD7A 66%,#7dadc8 66%);
+        }
+        .infos-posteur:nth-of-type(10) .profil_content:after {
+            content: "• Accidents & blessures \a • Alcoolisme \A • Contexte militaire & policier \A • Dépression \A • Deuil d'un parent";
+        }
+    }
+}
 }
