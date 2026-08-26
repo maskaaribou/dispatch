@@ -1,0 +1,64 @@
+.post:has(#lieu) .signature_div {display: none;}
+
+#lieu {
+	.ftit,
+	.ffond {
+		margin: auto;
+		width: 100%;
+	}
+	.ffond {
+		flex-wrap: wrap;
+		display: flex;
+		gap: 10px;
+	}
+	.ffond .l {
+		display: flex;
+		flex-direction: column;
+	}
+	.ffond .l,
+	.ffond .r {
+		flex: 1;
+		height: 435px;
+	}
+	.nav-tabs.fiche {
+		width: 100%;
+		position: relative;
+		font-size: 12px;
+		margin: 0 0 10px;
+	}
+	.ffond:has(input[id=ext]:checked) label[for=ext],
+	.ffond:has(input[id=int]:checked) label[for=int],
+	.ffond:has(input[id=ext2]:checked) label[for=ext2],
+	.ffond:has(input[id=int2]:checked) label[for=int2],
+	label:hover {
+		background-color: var(--textColor);
+		color: var(--white);
+	}
+	.ongletr,
+	.fonglet {
+		display: none;
+	}
+	input:checked+.fonglet {
+		display: flex;
+		flex-direction: column;
+	}
+	.ffond .l .fonglet {
+		flex: 1;
+	}
+	.ffond .fonglet .fbloc2 {
+		background-size: cover;
+		background-position: center;
+		height: 100%;
+		width: 100%;
+		flex: 1;
+	}
+	.ffond .r {
+		overflow: auto;
+		padding: 0 10px 0 0;
+	}
+	.ffond .desc {
+		height: 250px;
+		overflow: auto;
+		padding: 0 10px 0 0;
+	}
+}
