@@ -136,7 +136,7 @@
 
 
 
-	.post:has(.signamad) .post_userinfo {
+.post:has(.signamad) .post_userinfo {
 	hr {
 		border-top: 2px solid var(--textColorAccent);
 		margin: 5px 0 -7px !important;
