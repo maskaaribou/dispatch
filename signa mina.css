@@ -1,187 +1,286 @@
 @import url("https://kit-pro.fontawesome.com/releases/v7.2.0/css/pro.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 
-.post.post_row:has(.signamina) {
-	.signature_div {display: none}
-	.post_profile {
-		.rpg,
-		.profil {
-			text-wrap: pretty;
-			text-align: justify;
-			display: flex;
-			flex-direction: column;
-			flex-wrap: nowrap;
-			.infos-posteur {
-				hr {
-					border-top: 2px solid var(--textColorAccent);
-					margin: 5px 0 -7px !important;
+.post:has(.signamina) .post_userinfo {
+	hr {
+		border-top: 2px solid var(--textColorAccent);
+		margin: 5px 0 -7px !important;
+	}
+	a {
+		font-weight: bold!important;
+	}
+	u {
+		text-decoration-color: var(--textColorAccent);
+		text-decoration-thickness: 2px;
+	}
+	.profil {
+		text-wrap: pretty;
+		text-align: justify;
+		display: flex;
+		flex-direction: column;
+		.infos-posteur {
+			.profil_label .label {
+				display: block;
+			}
+			.profil_content {
+				img {
+					width: 185px;
+					height: 110px;
+					object-fit: cover;
 				}
-				.profil_label .label::before,
-				.profil_content strong::before {
-					content: "⟢ ";
-					font-weight: bold;
-				}
-				.profil_label .label {
-					display: block;
-				}
-				.profil_content {
-					img {
-						width: 100%;
-						height: 100px;
-						object-fit: cover;
+				strong {
+					color: var(--contrast);
+					font-family: var(--font2);
+					font-weight: 500;
+					text-transform: uppercase;
+					&:before {
+						font-family: "Font Awesome 7 Pro";
+						font-weight: 400 !important;
+						margin-right: 5px;
 					}
-					strong {
-						color: var(--contrast);
-						font-family: var(--font2);
-						line-height: normal;
-						font-size: 12px !important;
-						font-weight: 500;
-						text-transform: uppercase;
-					}
-					&:has(img)+.profil_separator {
-						display: none;
-					}
-                    &:has(img) {
-                        
-                    }
 				}
-				&:has(a) {
-					.profil_label .label::before {
-						content: "";
-					}
-					border-top: 2px solid var(--textColorAccent);
-					padding: 10px 0 0;
-					margin: -10px 0 3px !important;
-				}
-				&:not(:first-of-type) {
-					margin: 0 0 5px;
-				}
-				i {
-					display: inline-block;
-					margin: 0 0 5px;
-					&:has(+ br + i) {
-						margin: 0;
-					}
+				&:has(img)+.profil_separator {
+					display: none;
 				}
 			}
-		}
-		.profil {
-			.infos-posteur .profil_label .label:before,
-			.profil_content strong:before {
-				font-family: "Font Awesome 7 Pro";
-				font-weight: 400!important;
-				margin: 0 5px 0 0;
-			}
-			.infos-posteur:has(u) {
+			&:has(a) {
 				border-top: 2px solid var(--textColorAccent);
-				padding: 10px 0 0;
+				padding-top: 10px;
+				margin: -10px 0 3px !important;
+			}
+			&:not(:first-of-type) {
+				margin-bottom: 5px;
+			}
+			i {
+				display: inline-block;
+				margin-bottom: 5px;
+				&:has(+ br + i) {
+					margin-bottom: 0;
+				}
+			}
+			&:has(u) {
+				border-top: 2px solid var(--textColorAccent);
+				padding-top: 10px;
 				margin: -10px 0 0 !important;
 				order: 1;
-                display: block;
+				display: block;
 			}
-			.infos-posteur:nth-of-type(1):has(img)+.infos-posteur:nth-of-type(2) .profil_label .label::before {
-				content: "\f1fd";
+			.profil_label .label:before {
+				font-family: "Font Awesome 7 Pro";
+				font-weight: 400 !important;
+				margin-right: 5px;
 			}
-			.infos-posteur:nth-of-type(1):not(:has(img)) .profil_label .label::before {
-				content: "\f1fd";
-			}
-			.infos-posteur:nth-of-type(1):has(img)~.infos-posteur:nth-of-type(3) .profil_label .label::before {
-				content: "\f0b1";
-			}
-			.infos-posteur:nth-of-type(1):not(:has(img))+.infos-posteur:nth-of-type(2) .profil_label .label::before {
-				content: "\f0b1";
-			}
-			.infos-posteur:nth-of-type(4) .profil_label .label:before {
-				content: "\f81b";
-			}
-			.infos-posteur:nth-of-type(5) .profil_label .label:before {
-				content: "\e1b1";
-			}
-			.infos-posteur:nth-of-type(6) .profil_label .label:before {
-				content: "\f228";
-			}
-			.infos-posteur:nth-of-type(7) .profil_content strong:nth-of-type(1):before {
-				content: "\f16d";
-				font-family: "Font Awesome 7 Brands";
-				margin: 0 6px 0 2px
-			}
-			.infos-posteur:nth-of-type(7) .profil_content strong:nth-of-type(2):before {
-				content: "\f787"
-			}
-			.infos-posteur:nth-of-type(7) .profil_content strong:nth-of-type(3):before {
-				content: "\e78f"
-			}
-			.infos-posteur:nth-of-type(7) .profil_content strong:nth-of-type(4):before {
-				content: "\f06e"
-			}
-			.infos-posteur:nth-of-type(7) .profil_content strong:nth-of-type(5):before {
-				content: "\e54e"
-			}
-			.infos-posteur:nth-of-type(7) .profil_content strong:nth-of-type(6):before {
-				content: "\e0ab"
-			}
-			.infos-posteur:nth-of-type(7) .profil_content strong:nth-of-type(7):before {
-				content: "\f559"
-			}
-			.infos-posteur:nth-of-type(7) .profil_content strong:nth-of-type(8):before {
-				content: "\f5a2"
-			}
-			.infos-posteur:nth-of-type(8) .profil_label {
+			&:nth-of-type(8) .profil_label {
 				display: none;
 			}
-			.infos-posteur:nth-of-type(8) .profil_content strong:nth-of-type(1):before {
-				content: "\e212"
+		}
+		/* AGE */
+		.infos-posteur:nth-of-type(1):has(img)+.infos-posteur:nth-of-type(2) .profil_label .label:before,
+		.infos-posteur:nth-of-type(1):not(:has(img)) .profil_label .label:before {
+			content: "\f1fd";
+		}
+		/* MÉTIER */
+		.infos-posteur:nth-of-type(1):has(img)~.infos-posteur:nth-of-type(3) .profil_label .label:before,
+		.infos-posteur:nth-of-type(1):not(:has(img))+.infos-posteur:nth-of-type(2) .profil_label .label:before {
+			content: "\f0b1";
+		}
+		/* SITUATION */
+		.infos-posteur:nth-of-type(4) .profil_label .label:before {
+			content: "\f81b";
+		}
+		/* QUARTIER */
+		.infos-posteur:nth-of-type(5) .profil_label .label:before {
+			content: "\e1b1";
+		}
+		/* PRONOMS */
+		.infos-posteur:nth-of-type(6) .profil_label .label:before {
+			content: "\f228";
+		}
+		/* BLOC LIBRE */
+		.infos-posteur:nth-of-type(7) .profil_content strong {
+			a {
+				font-weight: 100!important
 			}
-			.infos-posteur:nth-of-type(8) .profil_content strong:nth-of-type(2):before {
-				content: "\f095"
+			/* PHONE */
+			&:nth-of-type(1):before {
+				content: "\f2a0";
+			}
+			/* INSTA */
+			&:nth-of-type(2):before {
+				content: "\f16d";
+				font-family: "Font Awesome 7 Brands";
+				margin: 0 6px 0 2px;
+			}
+			/* BUNNYLOVE */
+			&:nth-of-type(3):before {
+				content: "\f787";
 			}
 		}
-		.rpg {
-			.infos-posteur .profil_label .label:before,
-			.profil_content strong:before {
-				font-family: "Font Awesome 7 Pro";
-				font-weight: 400!important;
-				margin: 0 5px 0 0;
+		/* RPs */
+		.infos-posteur:nth-of-type(8) {
+			.profil_content strong:nth-of-type(1):before {
+				content: "\e212";
 			}
-			.infos-posteur:nth-of-type(1) .profil_label .label:before {
-				content: "\f007"!important;
+			i {
+				display: inline-block;
+				margin: 0 0 0px;
 			}
-			.infos-posteur:nth-of-type(2) .profil_label .label:before {
-				content: "\e1de"!important;
+			a {
+				display: inline-block;
+				max-width: 100%;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+				overflow: hidden;
+				margin: 0 0 -5px;
+				line-height: 120%;
 			}
-            .infos-posteur:nth-of-type(3):not(:has(~ .infos-posteur:nth-of-type(5))) .profil_label .label::before {
-                content: "\e1b9" !important;
-            }
-            .infos-posteur:nth-of-type(3):has(~ .infos-posteur:nth-of-type(5)) .profil_label .label::before {
-                content: "\e14f" !important;
-            }
-			.infos-posteur:nth-of-type(4) .profil_label .label:before {
-				content: "\f6ad"!important;font-weight: 800!important
+			a:hover {
+				text-overflow: unset;
+				white-space: wrap;
 			}
-			.infos-posteur:nth-of-type(5) .profil_label .label:before {
-				content: "\e1b9"!important;
-			}
-			.infos-posteur:nth-of-type(6) .profil_label .label:before {
-				content: "\f25c"!important;
-			}
-			.infos-posteur:nth-of-type(6) strong:before {
-				content: "\e33b"!important;
-			}
-			.infos-posteur:nth-of-type(7) .profil_label .label:before {
-				content: "\f5fd"!important;
-			}
-			.infos-posteur:nth-of-type(8) .profil_label .label:before {
-				content: "\f133"!important;
-			}
-			.infos-posteur:nth-of-type(9) .profil_label .label:before {
-				content: "\f05e"!important;
-			}
-			.infos-posteur:nth-of-type(10) .profil_label .label:before {
-				content: "\f071"!important;
-			}
-		}
-		u {
-			text-decoration-color: var(--textColorAccent);
-			text-decoration-thickness: 1.5px;
 		}
 	}
+    .rpg {
+        text-wrap: pretty;
+        text-align: justify;
+        display: flex;
+        flex-direction: column;
+        .infos-posteur .profil_label .label:before,
+        .profil_content strong:before {
+            font-family: "Font Awesome 7 Pro";
+            font-weight: 400!important;
+            margin: 0 5px 0 0;
+        }
+        .profil_label .label {
+            display: block;
+        }
+        strong {
+            display: inline-block;
+            margin: 10px 0 0;
+            color: var(--contrast);
+					font-family: var(--font2);
+					font-weight: 500;
+					text-transform: uppercase;
+        }
+        .infos-posteur:not(:first-of-type) .profil_label .label {
+            margin: 5px 0 0;
+        }
+        /* INSCRIPTION */
+        .infos-posteur:nth-of-type(1) .profil_label .label:before {
+            content: "\f007"!important;
+        }
+        /* MESSAGES */
+        .infos-posteur:nth-of-type(2) .profil_label .label:before {
+            content: "\e1de"!important;
+        }
+        /* PRONOMS */
+        .infos-posteur:nth-of-type(3):has(~ .infos-posteur:nth-of-type(5)) .profil_label .label::before {
+            content: "\e14f" !important;
+        }
+        /* KARMA */
+        .infos-posteur:nth-of-type(4) .profil_label .label:before {
+            content: "\f6ad"!important;
+            font-weight: 600!important
+        }
+        /* AVATAR */
+        .infos-posteur:nth-of-type(5) .profil_label .label:before {
+            content: "\e1b9"!important;
+        }
+        /* CRÉDITS */
+        .infos-posteur:nth-of-type(6) .profil_label .label:before {
+            content: "\f25c"!important;
+        }
+        /* IA */
+        .infos-posteur:nth-of-type(6) strong:before {
+            content: "\e33b"!important;
+        }
+        /* COMPTES */
+        .infos-posteur:nth-of-type(7) .profil_label .label:before {
+            content: "\f5fd"!important;
+        }
+        /* DISPO */
+        .infos-posteur:nth-of-type(8) .profil_label .label:before {
+            content: "\f133"!important;
+        }
+        /* TRIGGER */
+        .infos-posteur:nth-of-type(9) .profil_label .label:before {
+            content: "\f05e"!important;
+        }
+        /* WARNING */
+        .infos-posteur:nth-of-type(10) .profil_label .label:before {
+            content: "\f071"!important;
+        }
+        .infos-posteur:nth-of-type(7) .profil_content,
+		.infos-posteur:nth-of-type(9) .profil_content,
+		.infos-posteur:nth-of-type(10) .profil_content {
+			font-size: 0
+		}
+        .infos-posteur:nth-of-type(7) .profil_content:after {
+            font-size: 12px;
+            white-space: pre;
+            color: transparent;
+            background-clip: text;
+            display: inline-block;
+            font-weight: bold;
+        }
+        .infos-posteur:nth-of-type(9) .profil_content:after {
+            content: "• Gore \A • Self-harm \A • S*icide \A • Validisme \A • Arachnophobie";
+            font-size: 12px;
+            white-space: pre;
+            text-wrap: pretty;
+        }
+        .infos-posteur:nth-of-type(10) .profil_content:after {
+            font-size: 12px;
+            white-space: pre;
+            text-wrap: pretty;
+        }
+    }
+}
+
+.post:has(.signamina.diana) {
+    .rpg {
+        .infos-posteur:nth-of-type(7) .profil_content:after {
+            content: "🩺 Veronica Sullivan \A 💍 Emery Windemere \A 💃 Maria Williams";
+            background-image: linear-gradient(#c25755 33%, #a788af 33%, #a788af 66%, #d38275 66%);
+        }
+        .infos-posteur:nth-of-type(10) .profil_content:after {
+            content: "• TSA \A • TOC \A • Anxiété \A • Validisme";
+        }
+    }
+}
+
+.post:has(.signamina.ronnie) {
+    .rpg {
+        .infos-posteur:nth-of-type(7) .profil_content:after {
+            content: "🌙 Diana Slater \A 💍 Emery Windemere \A 💃 Maria Williams";
+            background-image: linear-gradient(#74a4cc 33%, #a788af 33%, #a788af 66%, #d38275 66%);
+        }
+        .infos-posteur:nth-of-type(10) .profil_content:after {
+            content: "• Thèmes Médicaux \A • Enfants Malades";
+        }
+    }
+}
+
+.post:has(.signamina.emery) {
+    .rpg {
+        .infos-posteur:nth-of-type(7) .profil_content:after {
+            content: "🌙 Diana Slater \A 🩺 Veronica Sullivan \A 💃 Maria Williams";
+            background-image: linear-gradient(#74a4cc 33%, #c25755 33%, #c25755 66%, #d38275 66%);
+        }
+        .infos-posteur:nth-of-type(10) .profil_content:after {
+            content: "• N/A";
+        }
+    }
+}
+
+.post:has(.signamina.maria) {
+    .rpg {
+        .infos-posteur:nth-of-type(7) .profil_content:after {
+            content: "🌙 Diana Slater \A 🩺 Veronica Sullivan \A 💍 Emery Windemere";
+            background-image: linear-gradient(#74a4cc 33%, #c25755 33%, #c25755 66%, #a788af 66%);
+        }
+        .infos-posteur:nth-of-type(10) .profil_content:after {
+            content: "• Passé militaire \A • Blessures & Soins";
+        }
+    }
 }
