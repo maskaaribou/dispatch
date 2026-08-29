@@ -1,6 +1,8 @@
 @import url("https://kit-pro.fontawesome.com/releases/v7.2.0/css/pro.min.css");
 @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 
+.post:has(.signamina) .signature_div {display:none}
+
 .post:has(.signamina) .post_userinfo {
 	hr {
 		border-top: 2px solid var(--textColorAccent);
