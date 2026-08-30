@@ -256,9 +256,14 @@
 			}
 		}
 		/* RPs */
-		.infos-posteur:nth-of-type(8) {
-			.profil_content strong:nth-of-type(1):before {
-				content: "\e212";
+		.infos-posteur:nth-of-type(8) .profil_content strong {
+			&:nth-of-type(1):before {
+				content: "\f499";
+                font-weight: 900!important
+			}
+			&:nth-of-type(2):before {
+				content: "\f02d";
+                font-weight: 900!important
 			}
 			i {
 				display: inline-block;
@@ -338,6 +343,7 @@
         /* COMPTES */
         .infos-posteur:nth-of-type(7) .profil_label .label:before {
             content: "\f5fd"!important;
+                font-weight: 900!important
         }
         /* DISPO */
         .infos-posteur:nth-of-type(8) .profil_label .label:before {
@@ -380,9 +386,11 @@
 
 .post:has(.signamad.felix) {
 	.profil .infos-posteur:nth-of-type(7) .profil_content strong {
-		/* DOGS */&:nth-of-type(4):before {content: "\f1b0";}
+		/* DOGS */&:nth-of-type(4):before {content: "\f1b0";
+                font-weight: 900!important}
 		/* HAND */&:nth-of-type(5):before {content: "\f259";}
-		/* BUREAU */&:nth-of-type(6):before {content: "\e87e";}
+		/* BUREAU */&:nth-of-type(6):before {content: "\e87e";
+                font-weight: 900!important}
 	}
     .rpg {
         .infos-posteur:nth-of-type(7) .profil_content:after {
@@ -400,9 +408,12 @@
 		/* AVA */&:nth-of-type(4):before {content: "\e78f";}
 		/* OEIL */&:nth-of-type(5):before {content: "\f06e";}
 		/* ARMÉE */&:nth-of-type(6):before {content: "\e54e";}
-		/* ARMÉE */&:nth-of-type(7):before {content: "\e0ab";}
-		/* ARMÉE */&:nth-of-type(8):before {content: "\f559";}
-		/* ARMÉE */&:nth-of-type(9):before {content: "\f5a2";}
+		/* ARMÉE */&:nth-of-type(7):before {content: "\e0ab";
+                font-weight: 900!important}
+		/* ARMÉE */&:nth-of-type(8):before {content: "\f559";
+                font-weight: 900!important}
+		/* ARMÉE */&:nth-of-type(9):before {content: "\f5a2";
+                font-weight: 900!important}
 	}
     .rpg {
         .infos-posteur:nth-of-type(7) .profil_content:after {
@@ -418,7 +429,8 @@
 .post:has(.signamad.connor) {
 	.profil .infos-posteur:nth-of-type(7) .profil_content strong {
 		/* DOGS */&:nth-of-type(4):before {content: "\f1b0";}
-		/* VOITURE */&:nth-of-type(5):before {content: "\f5e3";}
+		/* VOITURE */&:nth-of-type(5):before {content: "\f5e3";
+                font-weight: 900!important}
 		/* ANALGÉSIE */&:nth-of-type(6):before {content: "\f0f1";}
 	}
     .rpg {
@@ -436,7 +448,8 @@
 	.profil .infos-posteur:nth-of-type(7) .profil_content strong {
 		/* FAM */&:nth-of-type(4):before {content: "\e78f";}
 		/* ALCOOL */&:nth-of-type(5):before {content: "\f79f";}
-		/* BIKER */&:nth-of-type(6):before {content: "\f21c";}
+		/* BIKER */&:nth-of-type(6):before {content: "\f21c";
+                font-weight: 900!important}
 	}
     .rpg {
         .infos-posteur:nth-of-type(7) .profil_content:after {
