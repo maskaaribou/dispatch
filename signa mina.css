@@ -408,6 +408,10 @@
 		background: var(--white);
 		max-height: 335px
 	}
+	.post_profile a[href="https://dispatch.forumactif.com"],
+	.post_profile a[href="https://dispatch.forumactif.com/"]{
+	    display: none;
+	}
 }
 
 .post:has(.signamina.diana) {
@@ -423,9 +427,6 @@
 }
 
 .post:has(.signamina.ronnie) {
-	.post_profile a:has(.fa-camera) {
-		display: none;
-	}
 	.rpg {
         .infos-posteur:nth-of-type(7) .profil_content:after {
             content: "🌙 Diana Slater \A 💍 Emery Windemere \A 💃 Maria Williams";
@@ -438,9 +439,6 @@
 }
 
 .post:has(.signamina.emery) {
-	.post_profile a:has(.fa-camera) {
-		display: none;
-	}
 	.rpg {
         .infos-posteur:nth-of-type(7) .profil_content:after {
             content: "🌙 Diana Slater \A 🩺 Veronica Sullivan \A 💃 Maria Williams";
@@ -453,9 +451,6 @@
 }
 
 .post:has(.signamina.maria) {
-	.post_profile a:has(.fa-camera) {
-		display: none;
-	}
 	.rpg {
         .infos-posteur:nth-of-type(7) .profil_content:after {
             content: "🌙 Diana Slater \A 🩺 Veronica Sullivan \A 💍 Emery Windemere";
