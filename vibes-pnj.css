@@ -5,6 +5,9 @@
 	&:has(#pnj) .signature_div {
 		display: none;
 	}
+    .fa-mention, .btn-quote, .post_date a , time{
+        display: none;
+    }
 	#pnj {
 		.ftit,
 		.ffond {
