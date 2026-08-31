@@ -408,8 +408,8 @@
 		background: var(--white);
 		max-height: 335px
 	}
-	.post_profile a[href="https://dispatch.forumactif.com"],
-	.post_profile a[href="https://dispatch.forumactif.com/"]{
+	.post_profile .post_contact a[href="https://dispatch.forumactif.com"],
+	.post_profile .post_contact a[href="https://dispatch.forumactif.com/"]{
 	    display: none;
 	}
 }
