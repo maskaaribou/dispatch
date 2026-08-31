@@ -389,7 +389,7 @@
             font-weight: bold;
         }
         .infos-posteur:nth-of-type(9) .profil_content:after {
-            content: "• Abus et crimes sexuels \A • Décès d’un parent/animal \A • Procédures médicales en détail (injections & piqûres notamment) \A • Relations avec rapport de force ou de pouvoir";
+            content: "• Abus et crimes sexuels \A • Décès d’un parent ou d'un animal (IRL comme inRP) \A • Procédures médicales en détail (injections & piqûres notamment) \A • Relations avec rapport de force ou de pouvoir";
             font-size: 12px;
             white-space: pre;
             text-wrap: pretty;
