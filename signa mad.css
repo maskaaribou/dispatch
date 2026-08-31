@@ -541,6 +541,10 @@
 		background: var(--white);
 		max-height: 335px
 	}
+	.post_profile .post_contact a[href="https://dispatch.forumactif.com"],
+	.post_profile .post_contact a[href="https://dispatch.forumactif.com/"]{
+	    display: none;
+	}
 }
 
 .post:has(.signamad.felix) {
@@ -572,9 +576,6 @@
 }
 
 .post:has(.signamad.rick) {
-	.post_profile a:has(.fa-camera) {
-		display: none;
-	}
 	.profil .infos-posteur:nth-of-type(7) .profil_content strong {
 		/* AVA */
 		&:nth-of-type(1):before {
@@ -644,9 +645,6 @@
 }
 
 .post:has(.signamad.jacob) {
-	.post_profile a:has(.fa-camera) {
-		display: none;
-	}
 	.profil .infos-posteur:nth-of-type(7) .profil_content strong {
 		/* FAM */
 		&:nth-of-type(1):before {
