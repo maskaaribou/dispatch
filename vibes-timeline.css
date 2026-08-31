@@ -1,159 +1,164 @@
-.post:has(#timeline) .signature_div {display: none;}
-
-#timeline {
-	.ftit,
-	.ffond {
-		width: 100%;
-	}
-	h {
-		display: block;
-		position: relative;
-	}
-	h ln {
-		width: 3px;
-		height: calc(100% - 2px);
-		background: var(--textColor);
-		display: block;
-		position: absolute;
-		top: 1px;
-		left: 134px;
-		z-index: 1;
-	}
-	.filter-buttons {
-		display: flex;
-		justify-content: space-evenly;
-	}
-	.filter-buttons input {
+.post.post_row:has(.signamad),
+#preview:has(.signamad),
+.post.post_row:has(.signamina),
+#preview:has(.signamina) {
+	&:has(#timeline) .signature_div {
 		display: none;
 	}
-	.filter-buttons label {
-		flex: 1;
-		text-align: center;
-		padding: 5px;
-		color: var(--contrast);
-		cursor: pointer;
-		transition: background-color 0.3s;
-		line-height: 20px;
-		font-family: var(--font2);
-		text-transform: uppercase;
+	#timeline {
+		.ftit,
+		.ffond {
+			width: 100%;
+		}
+		h {
+			display: block;
+			position: relative;
+		}
+		h ln {
+			width: 3px;
+			height: calc(100% - 2px);
+			background: var(--textColor);
+			display: block;
+			position: absolute;
+			top: 1px;
+			left: 134px;
+			z-index: 1;
+		}
+		.filter-buttons {
+			display: flex;
+			justify-content: space-evenly;
+		}
+		.filter-buttons input {
+			display: none;
+		}
+		.filter-buttons label {
+			flex: 1;
+			text-align: center;
+			padding: 5px;
+			color: var(--contrast);
+			cursor: pointer;
+			transition: background-color 0.3s;
+			line-height: 20px;
+			font-family: var(--font2);
+			text-transform: uppercase;
+		}
+		.filter-buttons input:checked+label,
+		.filter-buttons label:hover {
+			background-color: var(--textColor);
+			color: var(--white);
+		}
+		.filter-buttons x {
+			display: block;
+			width: 10px;
+		}
+		.chrono {
+			background: var(--white);
+			padding: 0 10px;
+			border: var(--border);
+			box-sizing: border-box;
+			color: var(--textColor);
+			display: flex;
+			position: relative;
+			height: 700px;
+			overflow: auto;
+			align-items: flex-start;
+		}
+		.chrono lst {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+		}
+		.ffond+h .chrono lst div {
+			display: none;
+		}
+		.ffond:has(input[id="tout"]:checked)+h .chrono lst div,
+		.ffond+h .chrono lst div:has(a) {
+			display: block;
+		}
+		.chrono flab {
+			position: sticky;
+			top: 0;
+			z-index: 3;
+			margin: -1px 0 0 !important;
+		}
+		.chrono lst k {
+			display: flex;
+			flex-direction: column;
+		}
+		.chrono x {
+			display: none;
+			justify-content: space-between;
+			align-items: stretch;
+			border-bottom: 1px dashed var(--textColorAccent);
+			padding: 10px 0;
+		}
+		.chrono x:has(a),
+		.ffond:has(input[id="tout"]:checked)+h .chrono x {
+			display: flex;
+		}
+		.chrono x l {
+			display: flex;
+			flex-direction: column;
+			line-height: 100%;
+			width: 100px;
+			align-items: flex-end;
+			justify-content: center;
+		}
+		.chrono x l labo {
+			font-size: 12px;
+		}
+		.chrono x l labi2 {
+			font-size: 12px;
+			text-align: right;
+		}
+		.chrono x m {
+			width: 50px;
+			z-index: 2;
+			justify-content: center;
+			display: flex;
+			align-items: center;
+		}
+		.chrono x m y {
+			height: 20px;
+			width: 20px;
+			background: var(--grad);
+			display: block;
+			border-radius: 100%;
+		}
+		.chrono x r {
+			flex: 1;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			text-align: left;
+			padding: 0 15px 0 0;
+		}
+		.chrono x r labo2 {
+			display: block;
+			font-size: 15px;
+			line-height: 100%;
+		}
+		.chrono labo2 b a {
+			font-weight: 700 !important;
+		}
+		.chrono x r labo {
+			display: block;
+			font-size: 12px;
+		}
+		.chrono x r c {
+			text-align: justify;
+			line-height: 120%;
+			font-size: 12px;
+		}
+		.chrono w {
+			display: block;
+			width: 100px;
+			object-fit: cover;
+			background-size: cover;
+			background-position: center;
+		}
+		.ffond:has(input[id="croissant"]:checked)+h .chrono lst,
+		.ffond:has(input[id="croissant"]:checked)+h .chrono lst k {
+			flex-direction: column-reverse;
+		}
 	}
-	.filter-buttons input:checked+label,
-	.filter-buttons label:hover {
-		background-color: var(--textColor);
-		color: var(--white);
-	}
-	.filter-buttons x {
-		display: block;
-		width: 10px;
-	}
-	.chrono {
-		background: var(--white);
-		padding: 0 10px;
-		border: var(--border);
-		box-sizing: border-box;
-		color: var(--textColor);
-		display: flex;
-		position: relative;
-		height: 700px;
-		overflow: auto;
-		align-items: flex-start;
-	}
-	.chrono lst {
-		display: flex;
-		flex-direction: column;
-		width: 100%;
-	}
-	.ffond+h .chrono lst div {
-		display: none;
-	}
-	.ffond:has(input[id="tout"]:checked)+h .chrono lst div,
-	.ffond+h .chrono lst div:has(a) {
-		display: block;
-	}
-	.chrono flab {
-		position: sticky;
-		top: 0;
-		z-index: 3;
-		margin: -1px 0 0 !important;
-	}
-	.chrono lst k {
-		display: flex;
-		flex-direction: column;
-	}
-	.chrono x {
-		display: none;
-		justify-content: space-between;
-		align-items: stretch;
-		border-bottom: 1px dashed var(--textColorAccent);
-		padding: 10px 0;
-	}
-	.chrono x:has(a),
-	.ffond:has(input[id="tout"]:checked)+h .chrono x {
-		display: flex;
-	}
-	.chrono x l {
-		display: flex;
-		flex-direction: column;
-		line-height: 100%;
-		width: 100px;
-		align-items: flex-end;
-		justify-content: center;
-	}
-	.chrono x l labo {
-		font-size: 12px;
-	}
-	.chrono x l labi2 {
-		font-size: 12px;
-		text-align: right;
-	}
-	.chrono x m {
-		width: 50px;
-		z-index: 2;
-		justify-content: center;
-		display: flex;
-		align-items: center;
-	}
-	.chrono x m y {
-		height: 20px;
-		width: 20px;
-		background: var(--grad);
-		display: block;
-		border-radius: 100%;
-	}
-	.chrono x r {
-		flex: 1;
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-		text-align: left;
-		padding: 0 15px 0 0;
-	}
-	.chrono x r labo2 {
-		display: block;
-		font-size: 15px;
-		line-height: 100%;
-	}
-	.chrono labo2 b a {
-		font-weight: 700 !important;
-	}
-	.chrono x r labo {
-		display: block;
-		font-size: 12px;
-	}
-	.chrono x r c {
-		text-align: justify;
-		line-height: 120%;
-		font-size: 12px;
-	}
-	.chrono w {
-		display: block;
-		width: 100px;
-		object-fit: cover;
-		background-size: cover;
-		background-position: center;
-	}
-	.ffond:has(input[id="croissant"]:checked)+h .chrono lst,
-	.ffond:has(input[id="croissant"]:checked)+h .chrono lst k {
-		flex-direction: column-reverse;
-	}
-}
