@@ -160,7 +160,7 @@
 			}
 			.profil_content {
 				img {
-					width: 185px;
+					width: 183px;
 					height: 93px;
 					object-fit: cover;
 				}
@@ -212,7 +212,7 @@
 		}
 		.infos-posteur:has(img) {
 			margin: -340px 0 0;
-			padding: 0;
+			padding: 0 5px;
 		}
 		/* AGE */
 		.infos-posteur:nth-of-type(1):has(img)+.infos-posteur:nth-of-type(2) .profil_label .label:before,
