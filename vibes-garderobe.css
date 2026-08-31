@@ -5,7 +5,9 @@
 	&:has(#garderobe) .signature_div {
 		display: none;
 	}
-	
+    .fa-mention, .btn-quote, .post_date a , time{
+        display: none;
+    }
 	#garderobe {
 		.ftit,
 		.ffond {
