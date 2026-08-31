@@ -136,10 +136,6 @@
 	}
 }
 
-
-
-
-
 .post:has(.signamad) .post_userinfo {
 	hr {
 		border-top: 2px solid var(--textColorAccent);
@@ -158,13 +154,14 @@
 		display: flex;
 		flex-direction: column;
 		.infos-posteur {
+			padding: 0 5px;
 			.profil_label .label {
 				display: block;
 			}
 			.profil_content {
 				img {
 					width: 185px;
-					height: 110px;
+					height: 93px;
 					object-fit: cover;
 				}
 				strong {
@@ -193,7 +190,7 @@
 			i {
 				display: inline-block;
 				margin-bottom: 5px;
-				&:has(+ br + i) {
+				&:has(+br+i) {
 					margin-bottom: 0;
 				}
 			}
@@ -212,6 +209,10 @@
 			&:nth-of-type(8) .profil_label {
 				display: none;
 			}
+		}
+		.infos-posteur:has(img) {
+			margin: -340px 0 0;
+			padding: 0;
 		}
 		/* AGE */
 		.infos-posteur:nth-of-type(1):has(img)+.infos-posteur:nth-of-type(2) .profil_label .label:before,
@@ -240,49 +241,50 @@
 			a {
 				font-weight: 100!important
 			}
-			/* PHONE */
-			&:nth-of-type(1):before {
-				content: "\f2a0";
-			}
-			/* INSTA */
-			&:nth-of-type(2):before {
-				content: "\f16d";
-				font-family: "Font Awesome 7 Brands";
-				margin: 0 6px 0 2px;
-			}
-			/* BUNNYLOVE */
-			&:nth-of-type(3):before {
-				content: "\f787";
-			}
 		}
 		/* RPs */
 		.infos-posteur:nth-of-type(8) {
 			/* SHIP */
 			.profil_content strong:nth-of-type(1):before {
 				content: "\e78f";
-                font-weight: 500!important
+				font-weight: 500!important
 			}
 			/* INTERVENTION */
 			.profil_content strong:nth-of-type(2):before {
 				content: "\e420";
-                font-weight: 600!important
+				font-weight: 600!important
 			}
 			/* RP */
 			.profil_content strong:nth-of-type(3):before {
 				content: "\e74f";
-                font-weight: 500!important
+				font-weight: 500!important
+			}
+			/* PHONE */
+			.profil_content strong:nth-of-type(4):before {
+				content: "\f2a0";
+				font-weight: 500!important
+			}
+			/* INSTA */
+			.profil_content strong:nth-of-type(6):before {
+				content: "\f787";
+			}
+			/* BUNNYLOVE */
+			.profil_content strong:nth-of-type(5):before {
+				content: "\f16d";
+				font-family: "Font Awesome 7 Brands";
+				margin: 0 6px 0 2px;
 			}
 			i {
 				display: inline-block;
 				margin: 0 0 5px;
 			}
 			sub {
-                overflow: hidden;
-                display: block;
-                margin: 0px 0 -15px;
-                font-style: italic;
+				overflow: hidden;
+				display: block;
+				margin: 0px 0 -15px;
+				font-style: italic;
 			}
-			.profil_content strong:nth-of-type(1) ~ i {
+			.profil_content strong:nth-of-type(1)~i {
 				display: inline-block;
 				margin: 0 0 0px;
 			}
@@ -296,186 +298,347 @@
 				line-height: 115%;
 				text-transform: uppercase;
 				font-size: 11.5px;
-                font-weight: 500!important;
+				font-weight: 500!important;
 			}
 			a:hover {
 				text-overflow: unset;
 				white-space: wrap;
 			}
+			strong a {
+				margin: 0 0 -2.5px;
+			}
 		}
 	}
-    .rpg {
-        text-wrap: pretty;
-        text-align: justify;
-        display: flex;
-        flex-direction: column;
-        .infos-posteur .profil_label .label:before,
-        .profil_content strong:before {
-            font-family: "Font Awesome 7 Pro";
-            font-weight: 400!important;
-            margin: 0 5px 0 0;
-        }
-        .profil_label .label {
-            display: block;
-        }
-        strong {
-            display: inline-block;
-            margin: 10px 0 0;
-            color: var(--contrast);
-					font-family: var(--font2);
-					font-weight: 500;
-					text-transform: uppercase;
-        }
-        .infos-posteur:not(:first-of-type) .profil_label .label {
-            margin: 5px 0 0;
-        }
-        /* INSCRIPTION */
-        .infos-posteur:nth-of-type(1) .profil_label .label:before {
-            content: "\f007"!important;
-        }
-        /* MESSAGES */
-        .infos-posteur:nth-of-type(2) .profil_label .label:before {
-            content: "\e1de"!important;
-        }
-        /* PRONOMS */
-        .infos-posteur:nth-of-type(3):has(~ .infos-posteur:nth-of-type(5)) .profil_label .label::before {
-            content: "\e14f" !important;
-        }
-        /* KARMA */
-        .infos-posteur:nth-of-type(4) .profil_label .label:before {
-            content: "\f6ad"!important;
-            font-weight: 600!important
-        }
-        /* AVATAR */
-        .infos-posteur:nth-of-type(5) .profil_label .label:before {
-            content: "\e1b9"!important;
-        }
-        /* CRÉDITS */
-        .infos-posteur:nth-of-type(6) .profil_label .label:before {
-            content: "\f25c"!important;
-        }
-        /* IA */
-        .infos-posteur:nth-of-type(6) strong:before {
-            content: "\e33b"!important;
-        }
-        /* COMPTES */
-        .infos-posteur:nth-of-type(7) .profil_label .label:before {
-            content: "\f5fd"!important;
-                font-weight: 900!important
-        }
-        /* DISPO */
-        .infos-posteur:nth-of-type(8) .profil_label .label:before {
-            content: "\f133"!important;
-        }
-        /* TRIGGER */
-        .infos-posteur:nth-of-type(9) .profil_label .label:before {
-            content: "\f05e"!important;
-        }
-        /* WARNING */
-        .infos-posteur:nth-of-type(10) .profil_label .label:before {
-            content: "\f071"!important;
-        }
-        .infos-posteur:nth-of-type(7) .profil_content,
+	.rpg {
+		max-height: 350px;
+		overflow-y: auto !important;
+		overflow-x: hidden !important;
+		text-wrap: pretty;
+		text-align: justify;
+		display: flex;
+		flex-direction: column;
+		padding: 5px;
+		.infos-posteur .profil_label .label:before,
+		.profil_content strong:before {
+			font-family: "Font Awesome 7 Pro";
+			font-weight: 400!important;
+			margin: 0 5px 0 0;
+		}
+		.profil_label .label {
+			display: block;
+		}
+		strong {
+			display: inline-block;
+			margin: 10px 0 0;
+			color: var(--contrast);
+			font-family: var(--font2);
+			font-weight: 500;
+			text-transform: uppercase;
+		}
+		.infos-posteur:not(:first-of-type) .profil_label .label {
+			margin: 5px 0 0;
+		}
+		/* INSCRIPTION */
+		.infos-posteur:nth-of-type(1) .profil_label .label:before {
+			content: "\f007"!important;
+		}
+		/* MESSAGES */
+		.infos-posteur:nth-of-type(2) .profil_label .label:before {
+			content: "\e1de"!important;
+		}
+		/* PRONOMS */
+		.infos-posteur:nth-of-type(3):has(~.infos-posteur:nth-of-type(5)) .profil_label .label::before {
+			content: "\e14f" !important;
+		}
+		/* KARMA */
+		.infos-posteur:nth-of-type(4) .profil_label .label:before {
+			content: "\f6ad"!important;
+			font-weight: 600!important
+		}
+		/* AVATAR */
+		.infos-posteur:nth-of-type(5) .profil_label .label:before {
+			content: "\e1b9"!important;
+		}
+		/* CRÉDITS */
+		.infos-posteur:nth-of-type(6) .profil_label .label:before {
+			content: "\f25c"!important;
+		}
+		/* IA */
+		.infos-posteur:nth-of-type(6) strong:before {
+			content: "\e33b"!important;
+		}
+		/* COMPTES */
+		.infos-posteur:nth-of-type(7) .profil_label .label:before {
+			content: "\f5fd"!important;
+			font-weight: 900!important
+		}
+		/* DISPO */
+		.infos-posteur:nth-of-type(8) .profil_label .label:before {
+			content: "\f133"!important;
+		}
+		/* TRIGGER */
+		.infos-posteur:nth-of-type(9) .profil_label .label:before {
+			content: "\f05e"!important;
+		}
+		/* WARNING */
+		.infos-posteur:nth-of-type(10) .profil_label .label:before {
+			content: "\f071"!important;
+		}
+		.infos-posteur:nth-of-type(7) .profil_content,
 		.infos-posteur:nth-of-type(9) .profil_content,
 		.infos-posteur:nth-of-type(10) .profil_content {
 			font-size: 0
 		}
-        .infos-posteur:nth-of-type(7) .profil_content:after {
-            font-size: 12px;
-            white-space: pre;
-            color: transparent;
-            background-clip: text;
-            display: inline-block;
-            font-weight: bold;
-        }
-        .infos-posteur:nth-of-type(9) .profil_content:after {
-            content: "• Abus et crimes sexuels \A • Décès d’un parent ou d'un animal (surtout IRL, toléré inRP si mentionné) \A • Procédures médicales en détail (injections & piqûres notamment) \A • Relations avec rapport de force ou de pouvoir";
-            font-size: 12px;
-            white-space: pre;
-            text-wrap: pretty;
-        }
-        .infos-posteur:nth-of-type(10) .profil_content:after {
-            font-size: 12px;
-            white-space: pre;
-            text-wrap: pretty;
-        }
-    }
+		.infos-posteur:nth-of-type(7) .profil_content:after {
+			font-size: 12px;
+			white-space: pre;
+			color: transparent;
+			background-clip: text;
+			display: inline-block;
+			font-weight: bold;
+		}
+		.infos-posteur:nth-of-type(9) .profil_content:after {
+			content: "• Abus et crimes sexuels \A • Décès d’un parent ou d'un animal (surtout IRL, toléré inRP si mentionné) \A • Procédures médicales en détail (injections & piqûres notamment) \A • Relations avec rapport de force ou de pouvoir";
+			font-size: 12px;
+			white-space: pre;
+			text-wrap: pretty;
+		}
+		.infos-posteur:nth-of-type(10) .profil_content:after {
+			font-size: 12px;
+			white-space: pre;
+			text-wrap: pretty;
+		}
+	}
+	.systab .contents {
+		padding: 0;
+		max-height: 350px;
+		overflow-x: hidden !important;
+		overflow-y: auto !important;
+	}
+	.systab .contents:has(>.content.selected .spoiler_content:not([hidden])) {
+		overflow-y: hidden !important;
+	}
+	.systab .contents .rpg {
+		max-height: 350px;
+		overflow-y: auto !important;
+		overflow-x: hidden !important;
+	}
+	.systab .contents>.content {
+		overflow: visible !important;
+	}
+	.systab .contents>.content.selected {
+		overflow: visible !important;
+	}
+	.systab .contents .spoiler {
+		position: sticky !important;
+		top: 0 !important;
+		z-index: 99;
+	}
+	.systab .contents .spoiler_content {
+		max-height: 335px;
+		overflow-y: auto;
+		overflow-x: hidden;
+	}
+	.content.selected .profil .infos-posteur:has(.spoiler) {
+		order: -1 !important;
+		position: sticky !important;
+		top: 0;
+		left: 0;
+		margin: -5px 0 0 !important;
+		padding: 0 !important;
+		border: 0 !important;
+		height: 350px;
+		width: 200px;
+		z-index: 99;
+		pointer-events: none
+	}
+	.content.selected .profil .spoiler {
+		box-sizing: border-box;
+		scrollbar-color: var(--contrastLight);
+		scrollbar-width: thin;
+		text-wrap: pretty;
+		text-align: justify;
+		width: 100%;
+		height: 100%;
+	}
+	.content.selected .profil .spoiler_title {
+		color: var(--white);
+		background: var(--textColor);
+		cursor: pointer;
+		display: block;
+		width: 100%;
+		height: 15px;
+		line-height: 15px;
+		text-align: center;
+		transition: background-color 0.3s;
+		font-family: var(--font2);
+		text-transform: uppercase;
+		font-size: 0!important;
+		padding: 0 !important;
+		position: absolute;
+		bottom: 0;
+		pointer-events: auto;
+	}
+	.content.selected .profil .spoiler_title:after {
+		content: "trivia";
+		font-size: 14px;
+		font-weight: normal!important
+	}
+	.content.selected .profil .spoiler_content {
+		box-sizing: border-box;
+		width: 100%;
+		overflow: hidden;
+		text-align: justify;
+		text-wrap: pretty;
+		text-align: justify;
+		line-height: normal;
+		color: var(--textColor);
+		font-family: var(--font);
+		pointer-events: auto;
+	}
+	.content.selected .profil .spoiler_content[hidden] {
+		display: block !important;
+		max-height: 0;
+		opacity: 0;
+		overflow: hidden;
+	}
+	.content.selected .profil .spoiler_content:not([hidden]) {
+		display: block !important;
+		padding: 5px;
+		max-height: 335px;
+		opacity: 1;
+		overflow-y: auto;
+		transition: max-height 0.4s ease, opacity 0.3s ease;
+	}
+	.content.selected .profil .spoiler>dd {
+		margin: 0;
+		padding: 0;
+		background: var(--white);
+		max-height: 335px
+	}
 }
 
 .post:has(.signamad.felix) {
 	.profil .infos-posteur:nth-of-type(7) .profil_content strong {
-		/* DOGS */&:nth-of-type(4):before {content: "\f1b0";
-                font-weight: 900!important}
-		/* HAND */&:nth-of-type(5):before {content: "\f259";}
-		/* BUREAU */&:nth-of-type(6):before {content: "\e87e";
-                font-weight: 900!important}
+		/* DOGS */
+		&:nth-of-type(1):before {
+			content: "\f1b0";
+			font-weight: 900!important
+		}
+		/* HAND */
+		&:nth-of-type(2):before {
+			content: "\f259";
+		}
+		/* BUREAU */
+		&:nth-of-type(3):before {
+			content: "\e87e";
+			font-weight: 900!important
+		}
 	}
-    .rpg {
-        .infos-posteur:nth-of-type(7) .profil_content:after {
-            content: "🔥 Connor Dalma \A 🚨 Jacob Williams \A 🔫 Rick Addams";
-            background-image: linear-gradient(#DF2E42 33%, #76474E 33%, #76474E 66%, #7dadc8 66%);
-        }
-        .infos-posteur:nth-of-type(10) .profil_content:after {
-            content: "• Abus de médicaments \A • Anxiété généralisée (TAG) \A • Dépression \A • Séquelles de la maltraitance d'un animal (otectomie & caudectomie sur un chien)";
-        }
-    }
+	.rpg {
+		.infos-posteur:nth-of-type(7) .profil_content:after {
+			content: "🔥 Connor Dalma \A 🚨 Jacob Williams \A 🔫 Rick Addams";
+			background-image: linear-gradient(#DF2E42 33%, #76474E 33%, #76474E 66%, #7dadc8 66%);
+		}
+		.infos-posteur:nth-of-type(10) .profil_content:after {
+			content: "• Abus de médicaments \A • Anxiété généralisée (TAG) \A • Dépression \A • Séquelles de la maltraitance d'un animal (otectomie & caudectomie sur un chien)";
+		}
+	}
 }
 
 .post:has(.signamad.rick) {
 	.profil .infos-posteur:nth-of-type(7) .profil_content strong {
-		/* AVA */&:nth-of-type(4):before {content: "\f4be";font-weight: 500!important}
-		/* OEIL */&:nth-of-type(5):before {content: "\f06e";}
-		/* ARMÉE */&:nth-of-type(6):before {content: "\e54e";}
-		/* ARMÉE */&:nth-of-type(7):before {content: "\e0ab";
-                font-weight: 900!important}
-		/* ARMÉE */&:nth-of-type(8):before {content: "\f559";
-                font-weight: 900!important}
-		/* ARMÉE */&:nth-of-type(9):before {content: "\f5a2";
-                font-weight: 900!important}
+		/* AVA */
+		&:nth-of-type(1):before {
+			content: "\f4be";
+			font-weight: 500!important
+		}
+		/* OEIL */
+		&:nth-of-type(2):before {
+			content: "\f06e";
+		}
+		/* ARMÉE */
+		&:nth-of-type(3):before {
+			content: "\e54e";
+		}
+		/* ARMÉE */
+		&:nth-of-type(4):before {
+			content: "\e0ab";
+			font-weight: 900!important
+		}
+		/* ARMÉE */
+		&:nth-of-type(5):before {
+			content: "\f559";
+			font-weight: 900!important
+		}
+		/* ARMÉE */
+		&:nth-of-type(6):before {
+			content: "\f5a2";
+			font-weight: 900!important
+		}
 	}
-    .rpg {
-        .infos-posteur:nth-of-type(7) .profil_content:after {
-            content: "🔥 Connor Dalma \A 🐕 Félix Sullivan \A 🚨 Jacob Williams";
-            background-image: linear-gradient(#DF2E42 33%, #E4AD7A 33%, #E4AD7A 66%,#76474E 66%)
-        }
-        .infos-posteur:nth-of-type(10) .profil_content:after {
-            content: "• Blessures graves \A • Contexte militaire \A • Deuil familial \A • Guerre et conflits armés \A • PTSD";
-        }
-    }
+	.rpg {
+		.infos-posteur:nth-of-type(7) .profil_content:after {
+			content: "🔥 Connor Dalma \A 🐕 Félix Sullivan \A 🚨 Jacob Williams";
+			background-image: linear-gradient(#DF2E42 33%, #E4AD7A 33%, #E4AD7A 66%, #76474E 66%)
+		}
+		.infos-posteur:nth-of-type(10) .profil_content:after {
+			content: "• Blessures graves \A • Contexte militaire \A • Deuil familial \A • Guerre et conflits armés \A • PTSD";
+		}
+	}
 }
 
 .post:has(.signamad.connor) {
 	.profil .infos-posteur:nth-of-type(7) .profil_content strong {
-		/* DOGS */&:nth-of-type(4):before {content: "\f1b0";}
-		/* VOITURE */&:nth-of-type(5):before {content: "\f5e3";
-                font-weight: 900!important}
-		/* ANALGÉSIE */&:nth-of-type(6):before {content: "\f0f1";}
+		/* DOGS */
+		&:nth-of-type(1):before {
+			content: "\f1b0";
+		}
+		/* VOITURE */
+		&:nth-of-type(2):before {
+			content: "\f5e3";
+			font-weight: 900!important
+		}
+		/* ANALGÉSIE */
+		&:nth-of-type(3):before {
+			content: "\f0f1";
+		}
 	}
-    .rpg {
-        .infos-posteur:nth-of-type(7) .profil_content:after {
-            content: "🐕 Félix Sullivan \A 🚨 Jacob Williams \A 🔫 Rick Addams";
-            background-image: linear-gradient(#E4AD7A 33%, #76474E 33%, #76474E 66%,#7dadc8 66%);
-        }
-        .infos-posteur:nth-of-type(10) .profil_content:after {
-            content: "• Accidents & blessures \A • Conflits familiaux \A • Incendies \A • Peine de prison";
-        }
-    }
+	.rpg {
+		.infos-posteur:nth-of-type(7) .profil_content:after {
+			content: "🐕 Félix Sullivan \A 🚨 Jacob Williams \A 🔫 Rick Addams";
+			background-image: linear-gradient(#E4AD7A 33%, #76474E 33%, #76474E 66%, #7dadc8 66%);
+		}
+		.infos-posteur:nth-of-type(10) .profil_content:after {
+			content: "• Accidents & blessures \A • Conflits familiaux \A • Incendies \A • Peine de prison";
+		}
+	}
 }
 
 .post:has(.signamad.jacob) {
 	.profil .infos-posteur:nth-of-type(7) .profil_content strong {
-		/* FAM */&:nth-of-type(4):before {content: "\e1b2";font-weight: 600!important}
-		/* ALCOOL */&:nth-of-type(5):before {content: "\f79f";}
-		/* BIKER */&:nth-of-type(6):before {content: "\f21c";
-                font-weight: 900!important}
+		/* FAM */
+		&:nth-of-type(1):before {
+			content: "\e1b2";
+			font-weight: 600!important
+		}
+		/* ALCOOL */
+		&:nth-of-type(2):before {
+			content: "\f79f";
+		}
+		/* BIKER */
+		&:nth-of-type(3):before {
+			content: "\f21c";
+			font-weight: 900!important
+		}
 	}
-    .rpg {
-        .infos-posteur:nth-of-type(7) .profil_content:after {
-            content: "🔥 Connor Dalma \A 🐕 Félix Sullivan \A 🔫 Rick Addams";
-            background-image: linear-gradient(#DF2E42 33%, #E4AD7A 33%, #E4AD7A 66%,#7dadc8 66%);
-        }
-        .infos-posteur:nth-of-type(10) .profil_content:after {
-            content: "• Accidents & blessures \a • Alcoolisme \A • Contexte militaire & policier \A • Dépression \A • Deuil d'un parent";
-        }
-    }
+	.rpg {
+		.infos-posteur:nth-of-type(7) .profil_content:after {
+			content: "🔥 Connor Dalma \A 🐕 Félix Sullivan \A 🔫 Rick Addams";
+			background-image: linear-gradient(#DF2E42 33%, #E4AD7A 33%, #E4AD7A 66%, #7dadc8 66%);
+		}
+		.infos-posteur:nth-of-type(10) .profil_content:after {
+			content: "• Accidents & blessures \a • Alcoolisme \A • Contexte militaire & policier \A • Dépression \A • Deuil d'un parent";
+		}
+	}
 }
