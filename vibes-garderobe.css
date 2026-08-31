@@ -8,6 +8,17 @@
     .fa-mention, .btn-quote, .post_date a , time{
         display: none;
     }
+	#garderobe:after{
+	    content: "code par maskaaribou";
+	    display: block;
+	    font-size: 13px;
+	    font-variant: small-caps;
+	    text-align: center;
+	    width: 100%;
+	    color: var(--textColor);
+	    opacity: 0.5;
+	    grid-area: 6 / 1 / 7 / 5;
+	}
 	#garderobe {
 		.ftit,
 		.ffond {
