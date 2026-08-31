@@ -5,6 +5,9 @@
 	&:has(.moodboard) .signature_div {
 		display: none;
 	}
+    .fa-mention, .btn-quote, .post_date a , time{
+        display: none;
+    }
 	.moodboard {
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
