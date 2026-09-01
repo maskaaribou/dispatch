@@ -244,8 +244,8 @@
 				content: "\f228";
 			}
 			/* BLOC LIBRE */
-			.infos-posteur:nth-of-type(7) .profil_content strong {
-				a {
+			.infos-posteur:nth-of-type(7) {
+				.profil_content strong a {
 					font-weight: 100!important
 				}
 				/* PHONE */
