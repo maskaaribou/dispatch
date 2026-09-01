@@ -319,21 +319,19 @@
 					text-overflow: unset;
 					white-space: wrap;
                     margin: 0 0 0px;
-                    padding: 5px 5px 0;
+                    padding: 5px 0 0;
                     border-top:2px solid var(--neutral);
-                    background: var(--neutral);
 				}
                 a + br,
                 a + br + i,
                 a + br + i + br {
                     display: none!important;
-                    padding: 0 5px 3px;
-                    background: var(--neutral);
+                    padding: 0 0 3px;
+                    border-bottom:2px solid var(--neutral);
                     transition: 300ms all;
                 }
                 a:hover + br + i {
                     display: block!important;
-                    border-bottom:2px solid var(--neutral)
                 }
 				strong a {
 					margin: 0 0 -2.5px;
