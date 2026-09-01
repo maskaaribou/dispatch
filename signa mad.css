@@ -302,7 +302,7 @@
 				}
 				a {
 					display: inline-block;
-					max-width: 100%;
+					width: 100%;
 					text-overflow: ellipsis;
 					white-space: nowrap;
 					overflow: hidden;
@@ -311,18 +311,29 @@
 					text-transform: uppercase;
 					font-size: 11.5px;
 					font-weight: 500!important;
+                    text-align: left;
+                    border-top:2px solid transparent;
+                    transition: 300ms all;
 				}
 				a:hover {
 					text-overflow: unset;
 					white-space: wrap;
+                    margin: 0 0 0px;
+                    padding: 5px 5px 0;
+                    border-top:2px solid var(--neutral);
+                    background: var(--neutral);
 				}
                 a + br,
                 a + br + i,
                 a + br + i + br {
                     display: none!important;
+                    padding: 0 5px 3px;
+                    background: var(--neutral);
+                    transition: 300ms all;
                 }
                 a:hover + br + i {
                     display: block!important;
+                    border-bottom:2px solid var(--neutral)
                 }
 				strong a {
 					margin: 0 0 -2.5px;
