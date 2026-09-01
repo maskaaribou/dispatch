@@ -284,7 +284,7 @@
 				/* RP TERMINÉ */
 				.profil_content strong:nth-of-type(4):before {
 					content: "\f5db";
-					font-weight: 500!important
+					font-weight: 600!important
 				}
 				i {
 					display: inline-block;
