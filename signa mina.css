@@ -3,414 +3,416 @@
 
 .post:has(.signamina) .signature_div {display:none}
 
-.post:has(.signamina) .post_userinfo {
-	hr {
-		border-top: 2px solid var(--textColorAccent);
-		margin: 10px 0 -5px !important;
+.post:has(.signamina) {
+	.post_contact a[href="https://dispatch.forumactif.com"],
+	.post_contact a[href="https://dispatch.forumactif.com/"] {
+		display: none;
 	}
-	a {
-		font-weight: bold!important;
-	}
-	u {
-		text-decoration-color: var(--textColorAccent);
-		text-decoration-thickness: 2px;
-	}
-	.profil {
-		text-wrap: pretty;
-		text-align: justify;
-		display: flex;
-		flex-direction: column;
-		.infos-posteur {
-			padding: 0 5px;
-			.profil_label .label {
-				display: block;
-			}
-			.profil_content {
-				line-height: 100%;
-				height: 350px;
-				img {
-					width: 100%;
-					height: 110px;
-					object-fit: cover;
+	.post_userinfo {
+		hr {
+			border-top: 2px solid var(--textColorAccent);
+			margin: 10px 0 -5px !important;
+		}
+		a {
+			font-weight: bold!important;
+		}
+		u {
+			text-decoration-color: var(--textColorAccent);
+			text-decoration-thickness: 2px;
+		}
+		.profil {
+			text-wrap: pretty;
+			text-align: justify;
+			display: flex;
+			flex-direction: column;
+			.infos-posteur {
+				padding: 0 5px;
+				.profil_label .label {
+					display: block;
 				}
-				strong {
-					color: var(--contrast);
-					font-family: var(--font2);
-					font-weight: 500;
-					text-transform: uppercase;
-					&:before {
-						font-family: "Font Awesome 7 Pro";
-						font-weight: 400 !important;
-						margin-right: 5px;
+				.profil_content {
+					line-height: 100%;
+					height: 350px;
+					img {
+						width: 100%;
+						height: 110px;
+						object-fit: cover;
+					}
+					strong {
+						color: var(--contrast);
+						font-family: var(--font2);
+						font-weight: 500;
+						text-transform: uppercase;
+						&:before {
+							font-family: "Font Awesome 7 Pro";
+							font-weight: 400 !important;
+							margin-right: 5px;
+						}
+					}
+					&:has(img)+.profil_separator {
+						display: none;
 					}
 				}
-				&:has(img)+.profil_separator {
+				&:has(a) {
+					border-top: 2px solid var(--textColorAccent);
+					padding-top: 10px;
+					margin: -10px 0 3px !important;
+				}
+				&:not(:first-of-type) {
+					margin-bottom: 5px;
+				}
+				i {
+					display: inline-block;
+					margin-bottom: 5px;
+					&:has(+br+i) {
+						margin-bottom: 0;
+					}
+				}
+				&:has(u) {
+					border-top: 2px solid var(--textColorAccent);
+					padding-top: 10px;
+					margin: -10px 0 0 !important;
+					order: 1;
+					display: block;
+				}
+				.profil_label .label:before {
+					font-family: "Font Awesome 7 Pro";
+					font-weight: 400 !important;
+					margin-right: 5px;
+				}
+				&:nth-of-type(8) .profil_label {
 					display: none;
 				}
 			}
-			&:has(a) {
-				border-top: 2px solid var(--textColorAccent);
-				padding-top: 10px;
-				margin: -10px 0 3px !important;
+			.infos-posteur:has(img) {
+				margin: -340px 0 0;
+				padding: 0 5px;
 			}
-			&:not(:first-of-type) {
-				margin-bottom: 5px;
+			/* AGE */
+			.infos-posteur:nth-of-type(1):has(img)+.infos-posteur:nth-of-type(2) .profil_label .label:before,
+			.infos-posteur:nth-of-type(1):not(:has(img)) .profil_label .label:before {
+				content: "\f1fd";
 			}
-			i {
-				display: inline-block;
-				margin-bottom: 5px;
-				&:has(+br+i) {
-					margin-bottom: 0;
+			/* MÉTIER */
+			.infos-posteur:nth-of-type(1):has(img)~.infos-posteur:nth-of-type(3) .profil_label .label:before,
+			.infos-posteur:nth-of-type(1):not(:has(img))+.infos-posteur:nth-of-type(2) .profil_label .label:before {
+				content: "\f0b1";
+			}
+			/* SITUATION */
+			.infos-posteur:nth-of-type(4) .profil_label .label:before {
+				content: "\f81b";
+			}
+			/* QUARTIER */
+			.infos-posteur:nth-of-type(5) .profil_label .label:before {
+				content: "\e1b1";
+			}
+			/* PRONOMS */
+			.infos-posteur:nth-of-type(6) .profil_label .label:before {
+				content: "\f228";
+			}
+			/* BLOC LIBRE */
+			.infos-posteur:nth-of-type(7) .profil_content strong {
+				a {
+					font-weight: 100!important
 				}
 			}
-			&:has(u) {
-				border-top: 2px solid var(--textColorAccent);
-				padding-top: 10px;
-				margin: -10px 0 0 !important;
-				order: 1;
+			/* RPs */
+			.infos-posteur:nth-of-type(8) {
+				/* SHIP */
+				.profil_content strong:nth-of-type(1):before {
+					content: "\e78f";
+					font-weight: 500!important
+				}
+				/* INTERVENTION */
+				.profil_content strong:nth-of-type(2):before {
+					content: "\e420";
+					font-weight: 600!important
+				}
+				/* RP */
+				.profil_content strong:nth-of-type(3):before {
+					content: "\e74f";
+					font-weight: 500!important
+				}
+				/* PHONE */
+				.profil_content strong:nth-of-type(4):before {
+					content: "\f2a0";
+					font-weight: 500!important
+				}
+				/* INSTA */
+				.profil_content strong:nth-of-type(6):before {
+					content: "\f787";
+				}
+				/* BUNNYLOVE */
+				.profil_content strong:nth-of-type(5):before {
+					content: "\f16d";
+					font-family: "Font Awesome 7 Brands";
+					margin: 0 6px 0 2px;
+				}
+				i {
+					display: inline-block;
+					margin: 0 0 5px;
+				}
+				sub {
+					overflow: hidden;
+					display: block;
+					margin: 0px 0 -15px;
+					font-style: italic;
+				}
+				.profil_content strong:nth-of-type(1)~i {
+					display: inline-block;
+					margin: 0 0 0px;
+				}
+				a {
+					display: inline-block;
+					max-width: 100%;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+					overflow: hidden;
+					margin: 0 0 -5px;
+					line-height: 115%;
+					font-size: 11.5px;
+					font-weight: 500!important;
+				}
+				a:hover {
+					text-overflow: unset;
+					white-space: wrap;
+				}
+				strong a {
+					margin: 0 0 -2.5px;
+				}
+			}
+		}
+		.rpg {
+			max-height: 350px;
+			overflow-y: auto !important;
+			overflow-x: hidden !important;
+			text-wrap: pretty;
+			text-align: justify;
+			display: flex;
+			flex-direction: column;
+			padding: 5px;
+			.infos-posteur .profil_label .label:before,
+			.profil_content strong:before {
+				font-family: "Font Awesome 7 Pro";
+				font-weight: 400!important;
+				margin: 0 5px 0 0;
+			}
+			.profil_label .label {
 				display: block;
 			}
-			.profil_label .label:before {
-				font-family: "Font Awesome 7 Pro";
-				font-weight: 400 !important;
-				margin-right: 5px;
+			strong {
+				display: inline-block;
+				margin: 10px 0 0;
+				color: var(--contrast);
+				font-family: var(--font2);
+				font-weight: 500;
+				text-transform: uppercase;
 			}
-			&:nth-of-type(8) .profil_label {
-				display: none;
+			.infos-posteur:not(:first-of-type) .profil_label .label {
+				margin: 5px 0 0;
+				line-height: 100%;
 			}
-		}
-		.infos-posteur:has(img) {
-			margin: -340px 0 0;
-			padding: 0 5px;
-		}
-		/* AGE */
-		.infos-posteur:nth-of-type(1):has(img)+.infos-posteur:nth-of-type(2) .profil_label .label:before,
-		.infos-posteur:nth-of-type(1):not(:has(img)) .profil_label .label:before {
-			content: "\f1fd";
-		}
-		/* MÉTIER */
-		.infos-posteur:nth-of-type(1):has(img)~.infos-posteur:nth-of-type(3) .profil_label .label:before,
-		.infos-posteur:nth-of-type(1):not(:has(img))+.infos-posteur:nth-of-type(2) .profil_label .label:before {
-			content: "\f0b1";
-		}
-		/* SITUATION */
-		.infos-posteur:nth-of-type(4) .profil_label .label:before {
-			content: "\f81b";
-		}
-		/* QUARTIER */
-		.infos-posteur:nth-of-type(5) .profil_label .label:before {
-			content: "\e1b1";
-		}
-		/* PRONOMS */
-		.infos-posteur:nth-of-type(6) .profil_label .label:before {
-			content: "\f228";
-		}
-		/* BLOC LIBRE */
-		.infos-posteur:nth-of-type(7) .profil_content strong {
-			a {
-				font-weight: 100!important
+			/* INSCRIPTION */
+			.infos-posteur:nth-of-type(1) .profil_label .label:before {
+				content: "\f007"!important;
 			}
-		}
-		/* RPs */
-		.infos-posteur:nth-of-type(8) {
-			/* SHIP */
-			.profil_content strong:nth-of-type(1):before {
-				content: "\e78f";
-				font-weight: 500!important
+			/* MESSAGES */
+			.infos-posteur:nth-of-type(2) .profil_label .label:before {
+				content: "\e1de"!important;
 			}
-			/* INTERVENTION */
-			.profil_content strong:nth-of-type(2):before {
-				content: "\e420";
+			/* PRONOMS */
+			.infos-posteur:nth-of-type(3):has(~.infos-posteur:nth-of-type(5)) .profil_label .label::before {
+				content: "\e14f" !important;
+			}
+			/* KARMA */
+			.infos-posteur:nth-of-type(4) .profil_label .label:before {
+				content: "\f6ad"!important;
 				font-weight: 600!important
 			}
-			/* RP */
-			.profil_content strong:nth-of-type(3):before {
-				content: "\e74f";
-				font-weight: 500!important
+			/* AVATAR */
+			.infos-posteur:nth-of-type(5) .profil_label .label:before {
+				content: "\e1b9"!important;
 			}
-			/* PHONE */
-			.profil_content strong:nth-of-type(4):before {
-				content: "\f2a0";
-				font-weight: 500!important
+			/* CRÉDITS */
+			.infos-posteur:nth-of-type(6) .profil_label .label:before {
+				content: "\f25c"!important;
 			}
-			/* INSTA */
-			.profil_content strong:nth-of-type(6):before {
-				content: "\f787";
+			/* IA */
+			.infos-posteur:nth-of-type(6) strong:before {
+				content: "\e33b"!important;
 			}
-			/* BUNNYLOVE */
-			.profil_content strong:nth-of-type(5):before {
-				content: "\f16d";
-				font-family: "Font Awesome 7 Brands";
-				margin: 0 6px 0 2px;
+			/* COMPTES */
+			.infos-posteur:nth-of-type(7) .profil_label .label:before {
+				content: "\f5fd"!important;
+				font-weight: 900!important
 			}
-			i {
+			/* DISPO */
+			.infos-posteur:nth-of-type(8) .profil_label .label:before {
+				content: "\f133"!important;
+			}
+			/* TRIGGER */
+			.infos-posteur:nth-of-type(9) .profil_label .label:before {
+				content: "\f05e"!important;
+			}
+			/* WARNING */
+			.infos-posteur:nth-of-type(10) .profil_label .label:before {
+				content: "\f071"!important;
+			}
+			.infos-posteur:nth-of-type(7) .profil_content,
+			.infos-posteur:nth-of-type(9) .profil_content,
+			.infos-posteur:nth-of-type(10) .profil_content {
+				font-size: 0
+			}
+			.infos-posteur:nth-of-type(7) .profil_content:after {
+				font-size: 12px;
+				white-space: pre;
+				color: transparent;
+				background-clip: text;
 				display: inline-block;
-				margin: 0 0 5px;
+				font-weight: bold;
 			}
-			sub {
-				overflow: hidden;
-				display: block;
-				margin: 0px 0 -15px;
-				font-style: italic;
+			.infos-posteur:nth-of-type(9) .profil_content:after {
+				content: "• Gore \A • Self-harm \A • S*icide \A • Validisme \A • Arachnophobie";
+				font-size: 12px;
+				white-space: pre;
+				text-wrap: pretty;
 			}
-			.profil_content strong:nth-of-type(1)~i {
-				display: inline-block;
-				margin: 0 0 0px;
-			}
-			a {
-				display: inline-block;
-				max-width: 100%;
-				text-overflow: ellipsis;
-				white-space: nowrap;
-				overflow: hidden;
-				margin: 0 0 -5px;
-				line-height: 115%;
-				font-size: 11.5px;
-				font-weight: 500!important;
-			}
-			a:hover {
-				text-overflow: unset;
-				white-space: wrap;
-			}
-			strong a {
-				margin: 0 0 -2.5px;
+			.infos-posteur:nth-of-type(10) .profil_content:after {
+				font-size: 12px;
+				white-space: pre;
+				text-wrap: pretty;
 			}
 		}
-	}
-	.rpg {
-		max-height: 350px;
-		overflow-y: auto !important;
-		overflow-x: hidden !important;
-		text-wrap: pretty;
-		text-align: justify;
-		display: flex;
-		flex-direction: column;
-		padding: 5px;
-		.infos-posteur .profil_label .label:before,
-		.profil_content strong:before {
-			font-family: "Font Awesome 7 Pro";
-			font-weight: 400!important;
-			margin: 0 5px 0 0;
+		.systab .contents {
+			padding: 0;
+			height: 350px;
+			overflow-x: hidden !important;
+			overflow-y: auto !important;
 		}
-		.profil_label .label {
+		.systab .contents:has(>.content.selected .spoiler_content:not([hidden])) {
+			overflow-y: hidden !important;
+		}
+		.systab .contents .rpg {
+			max-height: 350px;
+			overflow-y: auto !important;
+			overflow-x: hidden !important;
+		}
+		.systab .contents>.content {
+			overflow: visible !important;
+		}
+		.systab .contents>.content.selected {
+			overflow: visible !important;
+		}
+		.systab .contents .spoiler {
+			position: sticky !important;
+			top: 0 !important;
+			z-index: 99;
+		}
+		.systab .contents .spoiler_content {
+			max-height: 335px;
+			overflow-y: auto;
+			overflow-x: hidden;
+		}
+		.content.selected .profil .infos-posteur:has(.spoiler) {
+			order: -1 !important;
+			position: sticky !important;
+			top: 0;
+			left: 0;
+			margin: -5px 0 0 !important;
+			padding: 0 !important;
+			border: 0 !important;
+			height: 350px;
+			width: 200px;
+			z-index: 2;
+			pointer-events: none
+		}
+		.content.selected .profil .infos-posteur:nth-of-type(8) {
+			margin: -350px 0 0 !important;
+		}
+		.content.selected .profil .spoiler {
+			box-sizing: border-box;
+			scrollbar-color: var(--contrastLight);
+			scrollbar-width: thin;
+			text-wrap: pretty;
+			text-align: justify;
+			width: 100%;
+			height: 100%;
+		}
+		.content.selected .profil .spoiler_title {
+			color: var(--white);
+			background: var(--textColorAccent);
+			cursor: pointer;
+			display: none;
+			width: 100%;
+			height: 15px;
+			line-height: 15px;
+			text-align: center;
+			transition: background-color 0.3s;
+			font-family: var(--font2);
+			text-transform: uppercase;
+			font-size: 0!important;
+			padding: 0 !important;
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			pointer-events: auto;
+			z-index: 2;
+		}
+		.content.selected .profil .infos-posteur:nth-of-type(8) .spoiler_title {
+			left: 0;
+			background: var(--contrast);
 			display: block;
 		}
-		strong {
-			display: inline-block;
-			margin: 10px 0 0;
-			color: var(--contrast);
-			font-family: var(--font2);
-			font-weight: 500;
-			text-transform: uppercase;
+		.content.selected .profil .spoiler_title:after {
+			content: "trivia";
+			font-size: 14px;
+			font-weight: normal!important;
 		}
-		.infos-posteur:not(:first-of-type) .profil_label .label {
-			margin: 5px 0 0;
-			line-height: 100%;
+		.content.selected .profil .infos-posteur:nth-of-type(8) .spoiler_title:after {
+			content: "suivi rp";
 		}
-		/* INSCRIPTION */
-		.infos-posteur:nth-of-type(1) .profil_label .label:before {
-			content: "\f007"!important;
+		.content.selected .profil .spoiler:has(.hidden) .spoiler_title {
+			width: 100%;
+			z-index: 9!important;
 		}
-		/* MESSAGES */
-		.infos-posteur:nth-of-type(2) .profil_label .label:before {
-			content: "\e1de"!important;
+		.content.selected .profil .spoiler:has(.hidden) .spoiler_title:after {
+			content: "fermer"!important;
 		}
-		/* PRONOMS */
-		.infos-posteur:nth-of-type(3):has(~.infos-posteur:nth-of-type(5)) .profil_label .label::before {
-			content: "\e14f" !important;
+		.content.selected .profil:has(.infos-posteur:nth-of-type(7) .hidden) .infos-posteur:nth-of-type(8) .spoiler_title {
+			display: none
 		}
-		/* KARMA */
-		.infos-posteur:nth-of-type(4) .profil_label .label:before {
-			content: "\f6ad"!important;
-			font-weight: 600!important
-		}
-		/* AVATAR */
-		.infos-posteur:nth-of-type(5) .profil_label .label:before {
-			content: "\e1b9"!important;
-		}
-		/* CRÉDITS */
-		.infos-posteur:nth-of-type(6) .profil_label .label:before {
-			content: "\f25c"!important;
-		}
-		/* IA */
-		.infos-posteur:nth-of-type(6) strong:before {
-			content: "\e33b"!important;
-		}
-		/* COMPTES */
-		.infos-posteur:nth-of-type(7) .profil_label .label:before {
-			content: "\f5fd"!important;
-			font-weight: 900!important
-		}
-		/* DISPO */
-		.infos-posteur:nth-of-type(8) .profil_label .label:before {
-			content: "\f133"!important;
-		}
-		/* TRIGGER */
-		.infos-posteur:nth-of-type(9) .profil_label .label:before {
-			content: "\f05e"!important;
-		}
-		/* WARNING */
-		.infos-posteur:nth-of-type(10) .profil_label .label:before {
-			content: "\f071"!important;
-		}
-		.infos-posteur:nth-of-type(7) .profil_content,
-		.infos-posteur:nth-of-type(9) .profil_content,
-		.infos-posteur:nth-of-type(10) .profil_content {
-			font-size: 0
-		}
-		.infos-posteur:nth-of-type(7) .profil_content:after {
-			font-size: 12px;
-			white-space: pre;
-			color: transparent;
-			background-clip: text;
-			display: inline-block;
-			font-weight: bold;
-		}
-		.infos-posteur:nth-of-type(9) .profil_content:after {
-			content: "• Gore \A • Self-harm \A • S*icide \A • Validisme \A • Arachnophobie";
-			font-size: 12px;
-			white-space: pre;
+		.content.selected .profil .spoiler_content {
+			box-sizing: border-box;
+			width: 100%;
+			overflow: hidden;
+			text-align: justify;
 			text-wrap: pretty;
+			text-align: justify;
+			line-height: normal;
+			color: var(--textColor);
+			font-family: var(--font);
+			pointer-events: auto;
 		}
-		.infos-posteur:nth-of-type(10) .profil_content:after {
-			font-size: 12px;
-			white-space: pre;
-			text-wrap: pretty;
+		.content.selected .profil .spoiler_content[hidden] {
+			display: block !important;
+			height: 0;
+			opacity: 0;
+			overflow: hidden;
 		}
-	}
-	.systab .contents {
-		padding: 0;
-		height: 350px;
-		overflow-x: hidden !important;
-		overflow-y: auto !important;
-	}
-	.systab .contents:has(>.content.selected .spoiler_content:not([hidden])) {
-		overflow-y: hidden !important;
-	}
-	.systab .contents .rpg {
-		max-height: 350px;
-		overflow-y: auto !important;
-		overflow-x: hidden !important;
-	}
-	.systab .contents>.content {
-		overflow: visible !important;
-	}
-	.systab .contents>.content.selected {
-		overflow: visible !important;
-	}
-	.systab .contents .spoiler {
-		position: sticky !important;
-		top: 0 !important;
-		z-index: 99;
-	}
-	.systab .contents .spoiler_content {
-		max-height: 335px;
-		overflow-y: auto;
-		overflow-x: hidden;
-	}
-	.content.selected .profil .infos-posteur:has(.spoiler) {
-		order: -1 !important;
-		position: sticky !important;
-		top: 0;
-		left: 0;
-		margin: -5px 0 0 !important;
-		padding: 0 !important;
-		border: 0 !important;
-		height: 350px;
-		width: 200px;
-		z-index: 2;
-		pointer-events: none
-	}
-	.content.selected .profil .infos-posteur:nth-of-type(8) {
-		margin: -350px 0 0 !important;
-	}
-	.content.selected .profil .spoiler {
-		box-sizing: border-box;
-		scrollbar-color: var(--contrastLight);
-		scrollbar-width: thin;
-		text-wrap: pretty;
-		text-align: justify;
-		width: 100%;
-		height: 100%;
-	}
-	.content.selected .profil .spoiler_title {
-		color: var(--white);
-		background: var(--textColorAccent);
-		cursor: pointer;
-		display: none;
-		width: 100%;
-		height: 15px;
-		line-height: 15px;
-		text-align: center;
-		transition: background-color 0.3s;
-		font-family: var(--font2);
-		text-transform: uppercase;
-		font-size: 0!important;
-		padding: 0 !important;
-		position: absolute;
-		bottom: 0;
-		right: 0;
-		pointer-events: auto;
-		z-index: 2;
-	}
-	.content.selected .profil .infos-posteur:nth-of-type(8) .spoiler_title {
-		left: 0;
-		background: var(--contrast);
-		display: block;
-	}
-	.content.selected .profil .spoiler_title:after {
-		content: "trivia";
-		font-size: 14px;
-		font-weight: normal!important;
-	}
-	.content.selected .profil .infos-posteur:nth-of-type(8) .spoiler_title:after {
-		content: "suivi rp";
-	}
-	.content.selected .profil .spoiler:has(.hidden) .spoiler_title {
-		width: 100%;
-		z-index: 9!important;
-	}
-	.content.selected .profil .spoiler:has(.hidden) .spoiler_title:after {
-		content: "fermer"!important;
-	}
-	.content.selected .profil:has(.infos-posteur:nth-of-type(7) .hidden) .infos-posteur:nth-of-type(8) .spoiler_title {
-		display: none
-	}
-	.content.selected .profil .spoiler_content {
-		box-sizing: border-box;
-		width: 100%;
-		overflow: hidden;
-		text-align: justify;
-		text-wrap: pretty;
-		text-align: justify;
-		line-height: normal;
-		color: var(--textColor);
-		font-family: var(--font);
-		pointer-events: auto;
-	}
-	.content.selected .profil .spoiler_content[hidden] {
-		display: block !important;
-		height: 0;
-		opacity: 0;
-		overflow: hidden;
-	}
-	.content.selected .profil .spoiler_content:not([hidden]) {
-		display: block !important;
-		padding: 5px;
-		height: 335px;
-		opacity: 1;
-		overflow-y: auto;
-		transition: max-height 0.4s ease, opacity 0.3s ease;
-	}
-	.content.selected .profil .spoiler>dd {
-		margin: 0;
-		padding: 0;
-		background: var(--white);
-		max-height: 335px
-	}
-	.post_profile .post_contact a[href="https://dispatch.forumactif.com"],
-	.post_profile .post_contact a[href="https://dispatch.forumactif.com/"]{
-	    display: none;
+		.content.selected .profil .spoiler_content:not([hidden]) {
+			display: block !important;
+			padding: 5px;
+			height: 335px;
+			opacity: 1;
+			overflow-y: auto;
+			transition: max-height 0.4s ease, opacity 0.3s ease;
+		}
+		.content.selected .profil .spoiler>dd {
+			margin: 0;
+			padding: 0;
+			background: var(--white);
+			max-height: 335px
+		}
 	}
 }
 
