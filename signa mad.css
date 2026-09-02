@@ -61,8 +61,8 @@
 		color: transparent;
 	}
 	.quote strike {
-	    text-decoration: line-through wavy 2px;
-	    margin: 0 0 0 6px;
+		text-decoration: line-through wavy 2px;
+		margin: 0 0 0 6px;
 	}
 	&:after {
 		content: "maskaaribou";
@@ -144,7 +144,7 @@
 	.post_userinfo {
 		hr {
 			border-top: 2px solid var(--textColorAccent);
-			margin: 10px 0 -5px !important;
+			margin: 5px 0 -10px !important;
 		}
 		a {
 			font-weight: bold!important;
@@ -271,24 +271,20 @@
 					content: "\e78f";
 					font-weight: 500!important
 				}
-				/* INTERVENTION */
-				.profil_content strong:nth-of-type(2):before {
-					content: "\e420";
-					font-weight: 600!important
-				}
 				/* RP */
-				.profil_content strong:nth-of-type(3):before {
+				.profil_content strong:nth-of-type(2):before {
 					content: "\e74f";
 					font-weight: 500!important
 				}
 				/* RP TERMINÉ */
-				.profil_content strong:nth-of-type(4):before {
+				.profil_content strong:nth-of-type(3):before {
 					content: "\f5db";
 					font-weight: 600!important
 				}
-				i {
-					display: inline-block;
-					margin: 0 0 5px;
+				/* INTERVENTION */
+				.profil_content strong:nth-of-type(4):before {
+					content: "\e420";
+					font-weight: 600!important
 				}
 				sub {
 					overflow: hidden;
@@ -296,45 +292,50 @@
 					margin: 0px 0 -15px;
 					font-style: italic;
 				}
-				.profil_content strong:nth-of-type(1)~i {
-					display: inline-block;
-					margin: 0 0 0px;
+				ul {
+					margin: 0;
+					padding: 0;
 				}
-				a {
-					display: inline-block;
+				ul br,
+				ul+br,
+				ul li br {
+					display: none;
+				}
+				ul li {
+					display: flex;
+					gap: 10px;
+					width: 100%;
+					font-size: 11.5px;
+					border-bottom: 2px dotted var(--neutral);
+					padding: 3px 3px 2px;
+					justify-content: center;
+				}
+				ul li i {
+					all: unset;
+				    text-wrap: nowrap;
+				}
+				ul li:last-of-type {
+					padding: 3px 3px 0px;
+					border-bottom: none;
+				}
+				ul li i:after {
+					content:" :"
+				}
+				ul li a {
 					width: 100%;
 					text-overflow: ellipsis;
 					white-space: nowrap;
 					overflow: hidden;
-					margin: 0 0 -5px;
-					line-height: 115%;
 					text-transform: uppercase;
 					font-size: 11.5px;
-					font-weight: 500!important;
-                    text-align: left;
-                    border-top:2px solid transparent;
-                    transition: 300ms all;
+					font-weight: 500 !important;
+					text-align: right
 				}
-				a:hover {
+				ul li:hover a {
+					text-align: justify;
+				    text-align-last: center;
 					text-overflow: unset;
 					white-space: wrap;
-                    margin: 0 0 -6px;
-                    padding: 5px 0 0;
-                    border-top:2px solid var(--neutral);
-				}
-                a + br,
-                a + br + i,
-                a + br + i + br {
-                    display: none!important;
-                    padding: 0 0 3px;
-                    border-bottom:2px solid var(--neutral);
-                    transition: 300ms all;
-                }
-                a:hover + br + i {
-                    display: block!important;
-                }
-				strong a {
-					margin: 0 0 -2.5px;
 				}
 			}
 		}
