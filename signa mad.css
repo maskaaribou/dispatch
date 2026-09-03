@@ -134,9 +134,31 @@
 			content: "The uniform can come off. Being their father never does.";
 		}
 	}
+	&.hope {
+		.pic1 {
+			background-image: url(https://i.pinimg.com/736x/bd/84/2f/bd842f5fa8c16fe568d5bca60c1d8045.jpg);
+            background-position: 0 90%;
+		}
+		.pic2 {
+			background-image: url(https://i.pinimg.com/736x/6b/a9/05/6ba905c8b173a34f3f1e8025125d59b1.jpg);
+		}
+		.gif:after {
+			background-image: url(https://64.media.tumblr.com/0584689bcc6ccf16d638ef9debf0e7b7/900afa7b5cf42bd1-e8/s540x810/c57494073d8a6f4c08a3c93c3aace23f6bd5ddf5.gif);
+			background-position: top center;
+		}
+		.quote:after {
+			content: "saddle up, we have dreams to chase";
+		}
+	}
 }
 
 .post:has(.signamad) {
+	--felix: #E4AD7A;
+	--rick: #7DADC8;
+	--connor: #DF2E42;
+	--jacob: #76474E;
+	--hope: #9CA47B;
+	
 	.post_contact a[href="https://dispatch.forumactif.com"],
 	.post_contact a[href="https://dispatch.forumactif.com/"] {
 		display: none;
@@ -693,6 +715,33 @@
 		}
 		.infos-posteur:nth-of-type(10) .profil_content:after {
 			content: "• Accidents & blessures \a • Alcoolisme \A • Contexte militaire & policier \A • Dépression \A • Deuil d'un parent";
+		}
+	}
+
+.post:has(.signamad.hope) {
+	.profil .infos-posteur:nth-of-type(7) .profil_content strong {
+		/* SCAR */
+		&:nth-of-type(4):before {
+			content: "\f6c2";
+			font-weight: 600!important
+		}
+		/* TRINKETS */
+		&:nth-of-type(5):before {
+			content: "\f49c";
+		}
+		/* PANSEMENTS */
+		&:nth-of-type(6):before {
+			content: "\f462";
+			font-weight: 900!important
+		}
+	}
+	.rpg {
+		.infos-posteur:nth-of-type(7) .profil_content:after {
+			content: "🔥 Connor Dalma \A 🐕 Félix Sullivan \A 🚨 Jacob Williams \A 🔫 Rick Addams";
+			background-image: linear-gradient( var(--connor) 0%, var(--connor) 25%, var(--felix) 25%, var(--felix) 50%, var(--jacob) 50%, var(--jacob) 75%, var(--rick) 75%, var(--rick) 100%);
+		}
+		.infos-posteur:nth-of-type(10) .profil_content:after {
+			content: "• Bébé-médicament \a • Conflits familiaux \A • Deuil familial \A • Parent toxique";
 		}
 	}
 }
