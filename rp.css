@@ -56,6 +56,11 @@
         --bg1: #e0925d;
         --bg2: #f1d2b5;
 	}
+	.postrp.hope {
+        --color: #a9b576;
+        --bg1: #5c4d44;
+        --bg2: #ecc391;
+    }
 	.postrp:after {
 		content: "maskaaribou";
 		display: block;
@@ -209,6 +214,7 @@
 	.postrp rp e,
 	.postrp rp j,
 	.postrp rp m,
+	.postrp rp h,
 	.postrp rp ava,
 	.postrp rp norah,
 	.postrp rp pnj {
@@ -224,6 +230,7 @@
 	.postrp rp e:before,
 	.postrp rp j:before,
 	.postrp rp m:before,
+	.postrp rp h:before,
 	.postrp rp ava:before,
 	.postrp rp norah:before,
 	.postrp rp pnj:before {
@@ -237,6 +244,7 @@
 	.postrp rp e:after,
 	.postrp rp j:after,
 	.postrp rp m:after,
+	.postrp rp h:after,
 	.postrp rp ava:after,
 	.postrp rp norah:after,
 	.postrp rp pnj:after {
@@ -249,7 +257,8 @@
 	.postrp rp c,
 	.postrp rp e,
 	.postrp rp j,
-	.postrp rp m {
+	.postrp rp m,
+	.postrp rp h {
 		color: var(--color)
 	}
 	.postrp rp ava {
