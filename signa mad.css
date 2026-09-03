@@ -741,7 +741,7 @@
 			background-image: linear-gradient( var(--connor) 0%, var(--connor) 25%, var(--felix) 25%, var(--felix) 50%, var(--jacob) 50%, var(--jacob) 75%, var(--rick) 75%, var(--rick) 100%);
 		}
 		.infos-posteur:nth-of-type(10) .profil_content:after {
-			content: "• Bébé-médicament \a • Conflits familiaux \A • Deuil familial \A • Parent toxique";
+			content: "• Bébé-médicament \a • Conflits familiaux \A • Deuil familial \A • Parent toxique \A • Procédures médicales abusives";
 		}
 	}
 }
