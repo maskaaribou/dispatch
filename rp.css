@@ -1,3 +1,8 @@
+.post:has(.postrp.felix),
+.post:has(.postrp.rick),
+.post:has(.postrp.jacob),
+.post:has(.postrp.connor) {display:none}
+
 .postrp {
 	display: block;
 }
